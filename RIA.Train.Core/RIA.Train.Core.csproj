@@ -112,6 +112,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\AppPermissions.cs" />
+    <Compile Include="Entities\T_CInfo.cs" />
+    <Compile Include="Entities\T_Class.cs" />
+    <Compile Include="Entities\T_Content.cs" />
+    <Compile Include="Entities\T_Dep.cs" />
+    <Compile Include="Entities\T_Estimate.cs" />
+    <Compile Include="Entities\T_Estimate_Detail.cs" />
+    <Compile Include="Entities\T_Grade.cs" />
+    <Compile Include="Entities\T_Group.cs" />
+    <Compile Include="Entities\T_HClass.cs" />
+    <Compile Include="Entities\T_Item.cs" />
+    <Compile Include="Entities\T_KPoint.cs" />
+    <Compile Include="Entities\T_Require.cs" />
+    <Compile Include="Entities\T_Staff.cs" />
+    <Compile Include="Entities\T_User.cs" />
     <Compile Include="TrainConsts.cs" />
     <Compile Include="TrainCoreModule.cs" />
     <Compile Include="Authorization\TrainAuthorizationProvider.cs" />
@@ -128,6 +143,19 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
+    <Compile Include="TrainFiledConst.cs" />
+    <Compile Include="T_Deps\Authorization\T_DepAppAuthorizationProvider.cs" />
+    <Compile Include="T_Deps\Authorization\T_DepAppPermissions.cs" />
+    <Compile Include="T_Deps\T_DepManage.cs" />
+    <Compile Include="T_Deps\____T_DepReadme.cs" />
+    <Compile Include="T_Groups\Authorization\T_GroupAppAuthorizationProvider.cs" />
+    <Compile Include="T_Groups\Authorization\T_GroupAppPermissions.cs" />
+    <Compile Include="T_Groups\T_GroupManage.cs" />
+    <Compile Include="T_Groups\____T_GroupReadme.cs" />
+    <Compile Include="T_Items\Authorization\T_ItemAppAuthorizationProvider.cs" />
+    <Compile Include="T_Items\Authorization\T_ItemAppPermissions.cs" />
+    <Compile Include="T_Items\T_ItemManage.cs" />
+    <Compile Include="T_Items\____T_ItemReadme.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />
@@ -166,7 +194,7 @@
     <EmbeddedResource Include="Localization\Source\Train-vi.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="IRepositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

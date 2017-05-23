@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Abp.AutoMapper;
 using Abp.Modules;
+using RIA.Train.Core.Authorization;
 
 namespace RIA.Train
 {
@@ -14,6 +15,8 @@ namespace RIA.Train
                 //Add your custom AutoMapper mappings here...
                 //mapper.CreateMap<,>()
             });
+
+            Configuration.Authorization.Providers.Add<T_DepAppAuthorizationProvider>();
         }
 
         public override void Initialize()

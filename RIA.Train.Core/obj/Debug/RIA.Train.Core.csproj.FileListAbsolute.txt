@@ -35,6 +35,6 @@ D:\myWork\Train20170520\RIA.Train.Core\bin\Debug\Nito.AsyncEx.Concurrent.xml
 D:\myWork\Train20170520\RIA.Train.Core\bin\Debug\Nito.AsyncEx.Enlightenment.xml
 D:\myWork\Train20170520\RIA.Train.Core\bin\Debug\System.Collections.Immutable.xml
 D:\myWork\Train20170520\RIA.Train.Core\bin\Debug\System.Linq.Dynamic.Core.xml
-D:\myWork\Train20170520\RIA.Train.Core\obj\Debug\RIA.Train.Core.csprojResolveAssemblyReference.cache
 D:\myWork\Train20170520\RIA.Train.Core\obj\Debug\RIA.Train.Core.dll
 D:\myWork\Train20170520\RIA.Train.Core\obj\Debug\RIA.Train.Core.pdb
+D:\myWork\Train20170520\RIA.Train.Core\obj\Debug\RIA.Train.Core.csprojResolveAssemblyReference.cache

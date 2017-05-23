@@ -18,6 +18,27 @@
     <text name="Password" value="密码" />
     <text name="RememberMe" value="记住我" />
     <text name="LogIn" value="登录" />
+    <text name="Register" value="注册"/>
+    <text name="Save" value="保存"/>
+    <text name="Cancel" value="取消"/>
+    <text name="Email address" value="邮箱地址"/>
+    <text name="Create new user" value="新建用户"/>
+    <text name="User name" value="用户名"/>
+
+    <text name="MustBe_Required" value="不能为空" />
+
+    <text name="T_Dep" value="部门表" />
+    <text name="T_DepHeaderInfo" value="部门表管理列表" />
+    <text name="CreateT_Dep" value="新增部门表" />
+    <text name="EditT_Dep" value="编辑部门表" />
+    <text name="DeleteT_Dep" value="删除部门表" />
+
+
+
+
+    <text name="T_DepDeleteWarningMessage" value="部门表名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="DepName" value="部门" />
 
     <text name="LoginFailed" value="登录失败!" />
     

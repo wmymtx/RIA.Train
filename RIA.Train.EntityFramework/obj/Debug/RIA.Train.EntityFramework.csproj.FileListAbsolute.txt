@@ -54,3 +54,5 @@ D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.EntityFramework.csproj.GenerateResource.Cache
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.EntityFramework.dll
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.EntityFramework.pdb
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170521.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170523.resources

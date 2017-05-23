@@ -142,3 +142,4 @@ D:\myWork\Train20170520\RIA.Train.Web\bin\zh\Hangfire.Core.resources.dll
 D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.csprojResolveAssemblyReference.cache
 D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.dll
 D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.pdb
+D:\myWork\Train20170520\RIA.Train.Web\bin\System.Linq.Dynamic.dll

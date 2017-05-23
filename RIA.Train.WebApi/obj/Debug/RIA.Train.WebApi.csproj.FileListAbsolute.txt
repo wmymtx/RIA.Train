@@ -69,3 +69,6 @@ D:\myWork\Train20170520\RIA.Train.WebApi\bin\Debug\System.Web.Http.WebHost.xml
 D:\myWork\Train20170520\RIA.Train.WebApi\obj\Debug\RIA.Train.WebApi.csprojResolveAssemblyReference.cache
 D:\myWork\Train20170520\RIA.Train.WebApi\obj\Debug\RIA.Train.WebApi.dll
 D:\myWork\Train20170520\RIA.Train.WebApi\obj\Debug\RIA.Train.WebApi.pdb
+D:\myWork\Train20170520\RIA.Train.WebApi\bin\Debug\EntityFramework.dll
+D:\myWork\Train20170520\RIA.Train.WebApi\bin\Debug\System.Linq.Dynamic.dll
+D:\myWork\Train20170520\RIA.Train.WebApi\bin\Debug\EntityFramework.xml

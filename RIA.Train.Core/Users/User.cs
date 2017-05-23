@@ -17,7 +17,7 @@ namespace RIA.Train.Users
         public static User CreateTenantAdminUser(int tenantId, string emailAddress, string password)
         {
             return new User
-            {
+            { 
                 TenantId = tenantId,
                 UserName = AdminUserName,
                 Name = AdminUserName,

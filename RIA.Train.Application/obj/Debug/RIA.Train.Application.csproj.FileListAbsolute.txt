@@ -45,3 +45,8 @@ D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\System.Linq.Dynamic.Core
 D:\myWork\Train20170520\RIA.Train.Application\obj\Debug\RIA.Train.Application.csprojResolveAssemblyReference.cache
 D:\myWork\Train20170520\RIA.Train.Application\obj\Debug\RIA.Train.Application.dll
 D:\myWork\Train20170520\RIA.Train.Application\obj\Debug\RIA.Train.Application.pdb
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.dll
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.SqlServer.dll
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\System.Linq.Dynamic.dll
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.xml
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.SqlServer.xml

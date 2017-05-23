@@ -55,5 +55,14 @@
     <text name="Yes" value="Yes" />
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />
+
+    <text name="	T_DepHeaderInfo" value="部门表List" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="DepName" value="部门" />
+
+    <text name="T_Dep" value="ManagementT_Dep" />
+    <text name="CreateT_Dep" value="CreateT_Dep" />
+    <text name="EditT_Dep" value="EditT_Dep" />
+    <text name="DeleteT_Dep" value="DeleteT_Dep" />
   </texts>
 </localizationDictionary>

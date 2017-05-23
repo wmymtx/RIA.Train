@@ -1,6 +1,7 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Localization;
 using RIA.Train.Authorization;
+using RIA.Train.Core.Authorization;
 
 namespace RIA.Train.Web
 {
@@ -14,6 +15,20 @@ namespace RIA.Train.Web
     {
         public override void SetNavigation(INavigationProviderContext context)
         {
+            var t_Dep = new MenuItemDefinition(
+               T_DepAppPermissions.T_Dep,
+               L("T_Dep"),
+               icon: "icon-grid"
+               );
+
+            t_Dep.AddItem(
+        new MenuItemDefinition(
+        T_DepAppPermissions.T_Dep,
+        L("T_Dep"),
+        "icon-star",
+        url: "T_Dep",
+        requiredPermissionName: T_DepAppPermissions.T_Dep));
+
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
@@ -39,7 +54,7 @@ namespace RIA.Train.Web
                         icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
                         )
-                ).AddItem(
+                ).AddItem(t_Dep).AddItem(
                     new MenuItemDefinition(
                         "About",
                         L("About"),

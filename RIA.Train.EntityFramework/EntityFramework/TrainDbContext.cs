@@ -3,12 +3,42 @@ using Abp.Zero.EntityFramework;
 using RIA.Train.Authorization.Roles;
 using RIA.Train.MultiTenancy;
 using RIA.Train.Users;
+using System.Data.Entity;
 
 namespace RIA.Train.EntityFramework
 {
     public class TrainDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...
+
+        IDbSet<Entities.T_Item> T_Item { get; set; }
+
+        IDbSet<Entities.T_KPoint> T_KPoint { get; set; }
+
+        IDbSet<Entities.T_HClass> T_HClass { get; set; }
+
+        IDbSet<Entities.T_Group> T_Group { get; set; }
+
+        IDbSet<Entities.T_Grade> T_Grade { get; set; }
+
+        IDbSet<Entities.T_Estimate_Detail> T_Estimate_Detail { get; set; }
+
+        IDbSet<Entities.T_Estimate> T_Estimate { get; set; }
+
+        IDbSet<Entities.T_Dep> T_Dep { get; set; }
+
+        IDbSet<Entities.T_Content> T_Content { get; set; }
+
+        IDbSet<Entities.T_Class> T_Class { get; set; }
+
+        IDbSet<Entities.T_CInfo> T_CInfo { get; set; }
+
+        IDbSet<Entities.T_Require> T_Require { get; set; }
+
+        IDbSet<Entities.T_Staff> T_Staff { get; set; }
+
+        IDbSet<Entities.T_User> T_User { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
