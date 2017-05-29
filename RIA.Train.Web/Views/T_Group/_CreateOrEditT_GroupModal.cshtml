@@ -1,0 +1,50 @@
+﻿
+@using Abp.Extensions
+@using Abp.Application.Services.Dto
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
+
+@model CreateOrEditT_GroupModalViewModel
+
+@* 初始化头部 *@
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Group") + ": " + Model.T_Group.FK_DepId) : L("CreateT_Group")))
+
+
+<!--html代码区域-->
+<div class="modal-body">
+    <form name="t_GroupInformationsForm"   role="form" novalidate class="form-validation">
+ <input type="hidden" name="Id" value="@Model.T_Group.Id" />
+ <div class="row>
+            
+               
+	     <div hidden="hidden">           
+            @if (Model.IsEditMode)
+            {
+                <input type="hidden" name="Id" value="@Model.T_Group.Id"/>
+            }
+        </div>
+	                  
+               
+ 
+	 <div class="form-group ">
+            <label for="fK_DepIdEdit">@L("FK_DepId")</label>
+          @*  @Html.DropDownList("FK_DepId", Model.T_Group.Select(a => a.ToSelectListItem()), new
+    {
+        @class = "form-control selectpicker",
+        data_live_search = "true",
+        id = "fK_DepIdEdit"
+    })*@
+        </div> 
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_Group.GroupName.IsNullOrEmpty() ? "" : " edited")" type="text" name="GroupName" value="@Model.T_Group.GroupName"		maxlength="30"  />			
+            <label>@L("GroupName") </label>
+        </div>
+   
+	                  
+            </div>
+    </form>
+</div>
+@Html.Partial("~/_ModalFooterWithSaveAndCancel.cshtml")
+ 

@@ -1,13 +1,13 @@
 ﻿
 @using Abp.Extensions
 @using Abp.Application.Services.Dto
-@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
-@using RIA.Train.Web.Areas.Mpa.Models.T_DepManage
+@using RIA.Train.Web.Models
+@using RIA.Train.Core
 
 @model CreateOrEditT_DepModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Dep") + ": " + Model.T_Dep.DepName) : L("CreateT_Dep")))
+//@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Dep") + ": " + Model.T_Dep.DepName) : L("CreateT_Dep")))
 
 
 <!--html代码区域-->

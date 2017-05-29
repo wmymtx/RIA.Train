@@ -1,0 +1,45 @@
+﻿
+@using Abp.Extensions
+@using Abp.Application.Services.Dto
+@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
+@using RIA.Train.Web.Areas.Mpa.Models.T_KPointManage
+
+@model CreateOrEditT_KPointModalViewModel
+
+@* 初始化头部 *@
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_KPoint") + ": " + Model.T_KPoint.Fk_Id) : L("CreateT_KPoint")))
+
+
+<!--html代码区域-->
+<div class="modal-body">
+    <form name="t_KPointInformationsForm"   role="form" novalidate class="form-validation">
+ <input type="hidden" name="Id" value="@Model.T_KPoint.Id" />
+ <div class="row>
+            
+               
+	     <div hidden="hidden">           
+            @if (Model.IsEditMode)
+            {
+                <input type="hidden" name="Id" value="@Model.T_KPoint.Id"/>
+            }
+        </div>
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_KPoint.Fk_Id.IsNullOrEmpty() ? "" : " edited")" type="text" name="Fk_Id" value="@Model.T_KPoint.Fk_Id"	 />			
+            <label>@L("Fk_Id") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_KPoint.TrainContent.IsNullOrEmpty() ? "" : " edited")" type="text" name="TrainContent" value="@Model.T_KPoint.TrainContent"		maxlength="50"  />			
+            <label>@L("TrainContent") </label>
+        </div>
+   
+	                  
+            </div>
+    </form>
+</div>
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+ 

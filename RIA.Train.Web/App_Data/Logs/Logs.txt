@@ -1563,3 +1563,571 @@ DEBUG 2017-05-23 22:53:59,994 [1    ] Abp.Logging.LogHelper                    -
 DEBUG 2017-05-23 22:53:59,994 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
 DEBUG 2017-05-23 22:54:24,736 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"945d5415-2258-47cf-a3e4-13a7b6fb24f8","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-23T22:54:24.7369455+08:00","Properties":{}}
 DEBUG 2017-05-23 22:54:24,785 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 945d5415-2258-47cf-a3e4-13a7b6fb24f8
+DEBUG 2017-05-24 22:09:48,196 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:09:48,483 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:09:48,491 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,495 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,496 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,497 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:09:48,499 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:09:49,578 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:09:49,578 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:09:49,578 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:09:49,578 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:09:50,452 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:10:01,290 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:10:01,324 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:10:01,331 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:10:01,466 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:10:01,468 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:10:01,636 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:10:01,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:10:01,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:10:01,758 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:10:01,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:10:01,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:10:01,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:10:01,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:10:01,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:10:05,196 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:10:05,200 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:10:05,202 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:10:05,204 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:10:05,207 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:10:05,208 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:10:05,211 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+WARN  2017-05-24 22:10:16,769 [9    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2017-05-24 22:11:06,061 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"db441b09-da91-4fd5-b2a3-ce572177402c","IpAddress":"::1","TenantId":1,"UserId":null,"ConnectTime":"2017-05-24T22:11:06.0535347+08:00","Properties":{}}
+DEBUG 2017-05-24 22:11:06,223 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: db441b09-da91-4fd5-b2a3-ce572177402c
+DEBUG 2017-05-24 22:11:48,844 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4cc1633a-2a04-4d15-b4fe-317cc932c13e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:11:48.8447132+08:00","Properties":{}}
+DEBUG 2017-05-24 22:11:48,860 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4cc1633a-2a04-4d15-b4fe-317cc932c13e
+DEBUG 2017-05-24 22:19:47,298 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:19:47,315 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:19:47,321 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:19:47,329 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:19:47,459 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:19:47,459 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:19:47,459 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:19:47,459 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:19:47,775 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:20:13,734 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:20:13,750 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:20:13,750 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:20:13,750 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:20:13,750 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:20:13,852 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:20:13,914 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:20:15,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:20:17,395 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c249e863-e1cd-4617-a1cf-e991de73edbb","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:20:17.3622088+08:00","Properties":{}}
+DEBUG 2017-05-24 22:20:39,738 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c249e863-e1cd-4617-a1cf-e991de73edbb
+DEBUG 2017-05-24 22:20:42,409 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0db05159-f151-47aa-b226-214560a6b6a8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:20:42.4099001+08:00","Properties":{}}
+DEBUG 2017-05-24 22:20:42,470 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0db05159-f151-47aa-b226-214560a6b6a8
+DEBUG 2017-05-24 22:20:46,407 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"40f69076-a43e-47f1-bcff-f7a481b031e7","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:20:46.4073263+08:00","Properties":{}}
+DEBUG 2017-05-24 22:20:46,440 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 40f69076-a43e-47f1-bcff-f7a481b031e7
+DEBUG 2017-05-24 22:29:53,968 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:29:53,984 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:29:53,989 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:53,996 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:29:54,119 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:29:54,119 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:29:54,119 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:29:54,119 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:29:54,448 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:29:59,183 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:29:59,190 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:29:59,195 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:29:59,221 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:29:59,222 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:29:59,333 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:29:59,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:29:59,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:29:59,397 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:29:59,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:29:59,399 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:29:59,399 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:30:01,253 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:30:01,254 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:30:01,256 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:30:01,258 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:30:01,261 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:30:01,262 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:30:01,265 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:30:02,053 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b58efdca-9799-4d20-ac48-7b329cd2ab31","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:30:02.0308017+08:00","Properties":{}}
+DEBUG 2017-05-24 22:30:02,053 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"28008d7c-e0d9-4de5-a6a9-6199edfbb24f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:30:02.0268015+08:00","Properties":{}}
+DEBUG 2017-05-24 22:30:31,568 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1cf816ab-30eb-46ce-a76d-99277a7cc47c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:30:31.5689679+08:00","Properties":{}}
+DEBUG 2017-05-24 22:30:31,621 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1cf816ab-30eb-46ce-a76d-99277a7cc47c
+DEBUG 2017-05-24 22:30:40,409 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1cf816ab-30eb-46ce-a76d-99277a7cc47c
+DEBUG 2017-05-24 22:38:27,445 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:38:27,463 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:38:27,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:27,476 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:38:27,589 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:38:27,589 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:38:27,589 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:38:27,589 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:38:27,900 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:38:31,239 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:38:31,246 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:38:31,251 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:38:31,253 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:38:31,254 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:38:31,346 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:38:31,402 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:38:31,402 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:38:31,404 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:38:31,404 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:38:31,405 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:38:33,274 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:38:33,275 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:38:33,276 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:38:33,278 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:38:33,279 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:38:33,280 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:38:33,281 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:38:33,879 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9c7d4b3b-ad60-4608-8d2f-831be311deaf","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:38:33.8565532+08:00","Properties":{}}
+DEBUG 2017-05-24 22:38:39,228 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9c7d4b3b-ad60-4608-8d2f-831be311deaf
+DEBUG 2017-05-24 22:38:57,542 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"406d72dc-182f-4337-9f64-cf048cbccd78","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:38:57.542908+08:00","Properties":{}}
+DEBUG 2017-05-24 22:38:57,582 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 406d72dc-182f-4337-9f64-cf048cbccd78
+DEBUG 2017-05-24 22:39:01,082 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 406d72dc-182f-4337-9f64-cf048cbccd78
+DEBUG 2017-05-24 22:41:54,315 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:41:54,330 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:41:54,336 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:54,343 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:41:54,462 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:41:54,462 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:41:54,463 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:41:54,463 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:41:54,757 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:41:59,212 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:41:59,220 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:41:59,225 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:41:59,252 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:41:59,253 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:41:59,362 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:41:59,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:41:59,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:41:59,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:41:59,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:41:59,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:41:59,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:42:01,479 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:42:01,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:42:01,481 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:42:01,483 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:42:01,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:42:01,485 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:42:01,486 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:43:58,183 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:43:58,198 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:43:58,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,206 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:58,211 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:43:58,330 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:43:58,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:43:58,330 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:43:58,330 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:43:58,638 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:43:59,953 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:43:59,960 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:43:59,965 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:43:59,968 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:43:59,970 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:44:00,078 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:44:00,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:44:00,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:44:00,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:44:00,141 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:44:00,141 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:44:01,957 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:44:01,958 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:44:01,960 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:44:01,961 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:44:01,962 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:44:01,963 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:44:01,964 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:44:23,103 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c98c19ce-47e4-4ca4-a09a-5f64470efe08","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:44:23.0975286+08:00","Properties":{}}
+DEBUG 2017-05-24 22:44:23,181 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c98c19ce-47e4-4ca4-a09a-5f64470efe08
+DEBUG 2017-05-24 22:44:37,092 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c98c19ce-47e4-4ca4-a09a-5f64470efe08
+DEBUG 2017-05-24 22:53:13,426 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:53:13,443 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:53:13,455 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,456 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:13,461 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:53:13,576 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:53:13,576 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:53:13,576 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:53:13,576 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:53:13,876 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:53:15,199 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:53:15,207 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:53:15,212 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:53:15,214 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:53:15,216 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:53:15,348 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:53:15,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:53:15,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:53:15,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:53:15,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:53:15,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:53:15,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:53:15,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:53:15,415 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 22:53:17,250 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 22:53:17,252 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 22:53:17,253 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 22:53:17,254 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 22:53:17,255 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 22:53:17,256 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 22:53:17,257 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 22:53:42,945 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4ba24543-1fdd-44f1-b5f2-34d43e64ac3f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T22:53:42.9325494+08:00","Properties":{}}
+DEBUG 2017-05-24 22:53:43,205 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4ba24543-1fdd-44f1-b5f2-34d43e64ac3f
+ERROR 2017-05-24 22:54:00,127 [6    ] IA.Train.Web.Controllers.T_DepController - d:\myWork\Train20170520\RIA.Train.Web\Views\T_Dep\Index.cshtml(4): error CS0234: 命名空间“RIA.Train.Entities”中不存在类型或命名空间名称“Authorization”(是否缺少程序集引用?)
+System.Web.HttpCompileException (0x80004005): d:\myWork\Train20170520\RIA.Train.Web\Views\T_Dep\Index.cshtml(4): error CS0234: 命名空间“RIA.Train.Entities”中不存在类型或命名空间名称“Authorization”(是否缺少程序集引用?)
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-05-24 22:54:00,182 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4ba24543-1fdd-44f1-b5f2-34d43e64ac3f
+DEBUG 2017-05-24 22:59:55,728 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-05-24 22:59:55,750 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2017-05-24 22:59:55,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Web.TrainWebModule, RIA.Train.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainDataModule, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainCoreModule, RIA.Train.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.TrainApplicationModule, RIA.Train.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: RIA.Train.Api.TrainWebApiModule, RIA.Train.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,762 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,763 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:55,766 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2017-05-24 22:59:55,895 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:59:55,895 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:59:55,895 [1    ] o.Configuration.LanguageManagementConfig - Converted 听课系统 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:59:55,895 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-05-24 22:59:56,215 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: RIA.Train.EntityFramework.TrainDbContext, RIA.Train.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-05-24 22:59:57,963 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-05-24 22:59:57,975 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-05-24 22:59:57,983 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-05-24 22:59:57,987 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: 听课系统
+DEBUG 2017-05-24 22:59:57,990 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-05-24 22:59:58,246 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-05-24 22:59:58,315 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2017-05-24 22:59:58,315 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.CreateUserInput
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Users.Dto.UserListDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepEditDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_DepListDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupEditDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_GroupListDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemEditDto
+DEBUG 2017-05-24 22:59:58,318 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Application.Dtos.T_ItemListDto
+DEBUG 2017-05-24 22:59:58,319 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2017-05-24 22:59:58,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.MultiTenancy.Dto.TenantListDto
+DEBUG 2017-05-24 22:59:58,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - RIA.Train.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2017-05-24 23:00:00,499 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2017-05-24 23:00:00,500 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2017-05-24 23:00:00,501 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_DepAppService' with service name 'app/t_Dep'.
+DEBUG 2017-05-24 23:00:00,502 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_GroupAppService' with service name 'app/t_Group'.
+DEBUG 2017-05-24 23:00:00,504 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Application.IT_ItemAppService' with service name 'app/t_Item'.
+DEBUG 2017-05-24 23:00:00,505 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2017-05-24 23:00:00,508 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'RIA.Train.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2017-05-24 23:00:39,243 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d6fcfbc9-88d5-4a5c-aec1-30317518fc29","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T23:00:39.2343605+08:00","Properties":{}}
+DEBUG 2017-05-24 23:00:39,397 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d6fcfbc9-88d5-4a5c-aec1-30317518fc29
+WARN  2017-05-24 23:01:28,060 [9    ] Abp.Logging.LogHelper                    - Can not find 'Refresh' in localization source '听课系统'!
+WARN  2017-05-24 23:01:28,068 [9    ] Abp.Logging.LogHelper                    - Can not find 'SearchWithThreeDot' in localization source '听课系统'!
+ERROR 2017-05-24 23:01:28,653 [9    ] Abp.Logging.LogHelper                    - Can not find file for: ~/Areas/Mpa/Views/T_DepManage/_CreateOrEditT_DepModal.es5.min.js! System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Abp.Web.Mvc.Extensions.HtmlHelperResourceExtensions.GetPathWithVersioningForEmbeddedFile(String path)
+   在 Abp.Web.Mvc.Extensions.HtmlHelperResourceExtensions.GetPathWithVersioning(String path)
+ERROR 2017-05-24 23:01:28,654 [9    ] Abp.Logging.LogHelper                    - Can not find file for: ~/Areas/Mpa/Views/T_DepManage/Index.es5.min.js! System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Abp.Web.Mvc.Extensions.HtmlHelperResourceExtensions.GetPathWithVersioningForEmbeddedFile(String path)
+   在 Abp.Web.Mvc.Extensions.HtmlHelperResourceExtensions.GetPathWithVersioning(String path)
+DEBUG 2017-05-24 23:01:28,707 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d6fcfbc9-88d5-4a5c-aec1-30317518fc29
+DEBUG 2017-05-24 23:01:29,538 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e4ffaef9-854b-4981-9cea-b1d57cd50837","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T23:01:29.5382377+08:00","Properties":{}}
+DEBUG 2017-05-24 23:01:29,557 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e4ffaef9-854b-4981-9cea-b1d57cd50837
+WARN  2017-05-24 23:01:38,876 [18   ] Abp.Logging.LogHelper                    - Can not find 'Refresh' in localization source '听课系统'!
+WARN  2017-05-24 23:01:38,877 [18   ] Abp.Logging.LogHelper                    - Can not find 'SearchWithThreeDot' in localization source '听课系统'!
+DEBUG 2017-05-24 23:01:39,886 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e4ffaef9-854b-4981-9cea-b1d57cd50837
+DEBUG 2017-05-24 23:01:41,295 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1156fc91-5a8b-4e2a-b5d4-e7da58942a61","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2017-05-24T23:01:41.2959102+08:00","Properties":{}}
+DEBUG 2017-05-24 23:01:41,576 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1156fc91-5a8b-4e2a-b5d4-e7da58942a61
+WARN  2017-05-24 23:01:58,586 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: 您没有权限进行此操作,您至少需要下列权限的其中一项: Tenants
+   在 Abp.Authorization.PermissionCheckerExtensions.<AuthorizeAsync>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: 您没有权限进行此操作,您至少需要下列权限的其中一项: Tenants
+   在 Abp.Authorization.PermissionCheckerExtensions.<AuthorizeAsync>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2017-05-24 23:01:58,630 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1156fc91-5a8b-4e2a-b5d4-e7da58942a61

@@ -7,6 +7,7 @@ using RIA.Train.Authorization;
 using RIA.Train.Authorization.Roles;
 using RIA.Train.EntityFramework;
 using RIA.Train.Users;
+using RIA.Train.Core.Authorization;
 
 namespace RIA.Train.Migrations.SeedData
 {
@@ -42,6 +43,9 @@ namespace RIA.Train.Migrations.SeedData
                     .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Tenant))
                     .ToList();
 
+                var t_depPermissions =
+                    PermissionFinder.GetAllPermissions(new T_DepAppAuthorizationProvider()).ToList();
+                permissions.AddRange(t_depPermissions);
                 foreach (var permission in permissions)
                 {
                     _context.Permissions.Add(

@@ -1,0 +1,52 @@
+﻿
+@using Abp.Extensions
+@using Abp.Application.Services.Dto
+@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
+@using RIA.Train.Web.Areas.Mpa.Models.T_CInfoManage
+
+@model CreateOrEditT_CInfoModalViewModel
+
+@* 初始化头部 *@
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_CInfo") + ": " + Model.T_CInfo.Fk_Id) : L("CreateT_CInfo")))
+
+
+<!--html代码区域-->
+<div class="modal-body">
+    <form name="t_CInfoInformationsForm"   role="form" novalidate class="form-validation">
+ <input type="hidden" name="Id" value="@Model.T_CInfo.Id" />
+ <div class="row>
+            
+               
+	     <div hidden="hidden">           
+            @if (Model.IsEditMode)
+            {
+                <input type="hidden" name="Id" value="@Model.T_CInfo.Id"/>
+            }
+        </div>
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_CInfo.Fk_Id.IsNullOrEmpty() ? "" : " edited")" type="text" name="Fk_Id" value="@Model.T_CInfo.Fk_Id"	 />			
+            <label>@L("Fk_Id") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_CInfo.Fk_UserId.IsNullOrEmpty() ? "" : " edited")" type="text" name="Fk_UserId" value="@Model.T_CInfo.Fk_UserId"	 />			
+            <label>@L("Fk_UserId") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_CInfo.UserName.IsNullOrEmpty() ? "" : " edited")" type="text" name="UserName" value="@Model.T_CInfo.UserName"		maxlength="30"  />			
+            <label>@L("UserName") </label>
+        </div>
+   
+	                  
+            </div>
+    </form>
+</div>
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+ 

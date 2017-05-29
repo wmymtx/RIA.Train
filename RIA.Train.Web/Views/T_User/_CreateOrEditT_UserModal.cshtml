@@ -1,0 +1,78 @@
+﻿
+@using Abp.Extensions
+@using Abp.Application.Services.Dto
+@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
+@using RIA.Train.Web.Areas.Mpa.Models.T_UserManage
+
+@model CreateOrEditT_UserModalViewModel
+
+@* 初始化头部 *@
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_User") + ": " + Model.T_User.FK_StaffId) : L("CreateT_User")))
+
+
+<!--html代码区域-->
+<div class="modal-body">
+    <form name="t_UserInformationsForm"   role="form" novalidate class="form-validation">
+ <input type="hidden" name="Id" value="@Model.T_User.Id" />
+ <div class="row>
+            
+               
+	     <div hidden="hidden">           
+            @if (Model.IsEditMode)
+            {
+                <input type="hidden" name="Id" value="@Model.T_User.Id"/>
+            }
+        </div>
+	                  
+               
+ 
+	 <div class="form-group ">
+            <label for="fK_StaffIdEdit">@L("FK_StaffId")</label>
+            @Html.DropDownList("FK_StaffId", Model.FK_Staffs.Select(a => a.ToSelectListItem()), new
+            {
+                @class = "form-control selectpicker",
+                data_live_search = "true",
+                id = "fK_StaffIdEdit"
+            })
+        </div> 
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_User.LoginNo.IsNullOrEmpty() ? "" : " edited")" type="text" name="LoginNo" value="@Model.T_User.LoginNo"	 />			
+            <label>@L("LoginNo") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_User.PassWord.IsNullOrEmpty() ? "" : " edited")" type="text" name="PassWord" value="@Model.T_User.PassWord"		maxlength="50"  />			
+            <label>@L("PassWord") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_User.OpenId.IsNullOrEmpty() ? "" : " edited")" type="text" name="OpenId" value="@Model.T_User.OpenId"		maxlength="100"  />			
+            <label>@L("OpenId") </label>
+        </div>
+   
+	                  
+               
+	    <div class="form-group form-md-line-input form-md-floating-label no-hint">
+            <label>@L("CreteTime"):   </label>            
+                <div class="input-group  date form_datetime">
+                    <input type="text" name="CreteTime" value="@Model.T_User.CreteTime" readonly class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn default date-set" type="button">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </span>
+                </div>
+        
+        </div>
+	                  
+            </div>
+    </form>
+</div>
+@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+ 

@@ -26,8 +26,7 @@ namespace RIA.Train.Web
         T_DepAppPermissions.T_Dep,
         L("T_Dep"),
         "icon-star",
-        url: "T_Dep",
-        requiredPermissionName: T_DepAppPermissions.T_Dep));
+        url: "T_Dep"));
 
             context.Manager.MainMenu
                 .AddItem(
