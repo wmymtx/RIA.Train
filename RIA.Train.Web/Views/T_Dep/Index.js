@@ -16,8 +16,8 @@
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_DepManage/CreateOrEditT_DepModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_DepManage/_CreateOrEditT_DepModal.es5.min.js',
+            viewUrl: abp.appPath + 'T_Dep/CreateOrEditT_DepModal',
+            scriptUrl:  '/Views/T_Dep/_CreateOrEditT_DepModal.js',
             modalClass: 'CreateOrEditT_DepModal'
         });
 
@@ -32,9 +32,10 @@
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_DepService.getPagedT_DepsAsync
-        }
+        //        listAction: {
+        //            method: _t_DepService.getPagedT_DepsAsync
+        //}
+                listAction: _t_DepService.getPagedT_DepsAsync
             },
 
         fields: {

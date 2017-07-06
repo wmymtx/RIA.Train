@@ -7,6 +7,7 @@ using System.Web;
 
 namespace RIA.Train.Web.Models
 {
+    [AutoMapFrom(typeof(GetT_DepForEditOutput))]
     public class CreateOrEditT_DepModalViewModel: GetT_DepForEditOutput
     {
         public CreateOrEditT_DepModalViewModel(GetT_DepForEditOutput output)

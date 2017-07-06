@@ -14,14 +14,7 @@
 }
 
 
-@* 注入所需JS *@
-@section Scripts
-{ <script src="~/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
- 
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_DepManage/_CreateOrEditT_DepModal.es5.min.js")
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_DepManage/Index.es5.min.js")
-}
 <div class="row margin-bottom-5">
     <div class="col-xs-6">
         <div class="page-head">
@@ -37,15 +30,15 @@
         <button  id="ButtonReload" class="btn btn-primary blue"><i class="fa  fa-refresh"></i> @L("Refresh")</button>
 
 
-        @if (IsGranted(T_DepAppPermissions.T_Dep_CreateT_Dep))
-        {
-            <button id="CreateNewT_DepButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_Dep")</button>
-        }
+       @* @if (IsGranted(T_DepAppPermissions.T_Dep_CreateT_Dep)) *@
+            {
+                <button id="CreateNewT_DepButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_Dep")</button>
+            }
+        </div>
     </div>
-</div>
 
-<div class="portlet light">
- @* 通用搜索功能 *@
+    <div class="portlet light">
+     @* 通用搜索功能 *@
 <div class="portlet-title portlet-title-filter">
         <div class="inputs inputs-full-width">
             <div class="portlet-input">
@@ -66,6 +59,15 @@
         <div id="T_DepsTable"></div>
     </div>
 </div>
+@* 注入所需JS *@
+@section Scripts
+{
+    <script src="~/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+
+    @Html.IncludeScript("/Views/T_Dep/_CreateOrEditT_DepModal.js")
+    @Html.IncludeScript("/Views/T_Dep/Index.js")
+}
 
 
 

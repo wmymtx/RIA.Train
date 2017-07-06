@@ -28,13 +28,14 @@ using RIA.Train.Core.Authorization;
 using RIA.Train.Entities;
 using RIA.Train.Core;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
     /// <summary>
     /// 班组表服务实现
     /// </summary>
-    [AbpAuthorize(T_GroupAppPermissions.T_Group)]
+    //[AbpAuthorize(T_GroupAppPermissions.T_Group)]
     public class T_GroupAppService : TrainAppServiceBase, IT_GroupAppService
     {
         private readonly IRepository<T_Group,int> _t_GroupRepository;
@@ -59,7 +60,7 @@ T_GroupManage t_GroupManage
     /// <summary>
     /// 根据查询条件获取班组表分页列表
     /// </summary>
-    public async Task<PagedResultDto<T_GroupListDto>> GetPagedT_GroupsAsync(GetT_GroupInput input)
+    public async Task<JtableResult<List<T_GroupListDto>>> GetPagedT_GroupsAsync(GetT_GroupInput input)
 {
 			
     var query = _t_GroupRepository.GetAll();
@@ -69,14 +70,15 @@ T_GroupManage t_GroupManage
 
     var t_Groups = await query
     .OrderBy(input.Sorting)
-    .PageBy(input)
+   // .PageBy(input)
     .ToListAsync();
 
     var t_GroupListDtos = t_Groups.MapTo<List<T_GroupListDto>>();
-    return new PagedResultDto<T_GroupListDto>(
-    t_GroupCount,
-    t_GroupListDtos
-    );
+            //return new PagedResultDto<T_GroupListDto>(
+            //t_GroupCount,
+            //t_GroupListDtos
+            //);
+            return new JtableResult<List<T_GroupListDto>>(t_GroupCount, t_GroupListDtos);
     }
 
         /// <summary>
@@ -137,7 +139,7 @@ T_GroupManage t_GroupManage
     /// <summary>
     /// 新增班组表
     /// </summary>
-    [AbpAuthorize(T_GroupAppPermissions.T_Group_CreateT_Group)]
+    //[AbpAuthorize(T_GroupAppPermissions.T_Group_CreateT_Group)]
     public virtual async Task<T_GroupEditDto> CreateT_GroupAsync(T_GroupEditDto input)
 {
     //TODO:新增前的逻辑判断，是否允许新增
@@ -151,7 +153,7 @@ T_GroupManage t_GroupManage
     /// <summary>
     /// 编辑班组表
     /// </summary>
-    [AbpAuthorize(T_GroupAppPermissions.T_Group_EditT_Group)]
+   // [AbpAuthorize(T_GroupAppPermissions.T_Group_EditT_Group)]
     public virtual async Task UpdateT_GroupAsync(T_GroupEditDto input)
 {
     //TODO:更新前的逻辑判断，是否允许更新
@@ -165,7 +167,7 @@ T_GroupManage t_GroupManage
     /// <summary>
     /// 删除班组表
     /// </summary>
-    [AbpAuthorize(T_GroupAppPermissions.T_Group_DeleteT_Group)]
+   // [AbpAuthorize(T_GroupAppPermissions.T_Group_DeleteT_Group)]
     public async Task DeleteT_GroupAsync(EntityDto<int> input)
 {
     //TODO:删除前的逻辑判断，是否允许删除

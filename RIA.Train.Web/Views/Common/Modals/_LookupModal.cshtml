@@ -1,7 +1,7 @@
-﻿@using MyCompanyName.AbpZeroTemplate.Web.Areas.Mpa.Models.Common.Modals
+﻿@using RIA.Train.Web.Models.Common
 @model LookupModalViewModel
 
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.Title ?? L("SelectAnItem")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.Title ?? L("SelectAnItem")))
 
 <div class="modal-body">
     <form ng-if="vm.options.showFilter">

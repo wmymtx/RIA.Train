@@ -1,4 +1,5 @@
-﻿
+﻿app = app || {};
+app.modals = app.modals || {};
 (function ($) {
     app.modals.CreateOrEditT_ItemModal = function () {
 
@@ -33,16 +34,16 @@
 						
 			 
 			   	 	 	 // 初始化 创建时间 的包含时分秒的日期控件
-		   //包含时分秒的日期选择器             
-            $("input[name=CreateTime]").datetimepicker({
-                autoclose: true,
-                isRTL: false,
-                format: "yyyy-mm-dd hh:ii",
-                pickerPosition: ("bottom-left"),
-				//默认为E文按钮要中文，自己去找语言包
-				   todayBtn: true,
-				     language: "zh-CN"
-            });
+		  // //包含时分秒的日期选择器             
+    //        $("input[name=CreateTime]").datetimepicker({
+    //            autoclose: true,
+    //            isRTL: false,
+    //            format: "yyyy-mm-dd hh:ii",
+    //            pickerPosition: ("bottom-left"),
+				////默认为E文按钮要中文，自己去找语言包
+				//   todayBtn: true,
+				//     language: "zh-CN"
+    //        });
 	 
 
 

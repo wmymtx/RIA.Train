@@ -1,13 +1,13 @@
 ﻿
 @using Abp.Extensions
 @using Abp.Application.Services.Dto
-@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
-@using RIA.Train.Web.Areas.Mpa.Models.T_GradeManage
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
 
 @model CreateOrEditT_GradeModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Grade") + ": " + Model.T_Grade.Grade) : L("CreateT_Grade")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Grade") + ": " + Model.T_Grade.Grade) : L("CreateT_Grade")))
 
 
 <!--html代码区域-->
@@ -34,5 +34,5 @@
             </div>
     </form>
 </div>
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
  

@@ -1,7 +1,7 @@
 ﻿
 
 @using Abp.Web.Mvc.Extensions
-@using RIA.Train.Entities.Authorization
+@using RIA.Train.Core.Authorization
 @{
     ViewBag.CurrentPageName = T_StaffAppPermissions.T_Staff;
     ViewBag.Title = L("T_Staff");
@@ -10,7 +10,7 @@
 
 @section Styles{
 		
-	  	  	     <link href="~/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>     	  	    
+	  	  	   @*  <link href="~/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>*@     	  	    
 }
 
 
@@ -18,12 +18,12 @@
 @section Scripts
 { <script src="~/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
-       <script src="~/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script src="~/libs/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+       @*<script src="~/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="~/libs/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>*@
 
   
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_StaffManage/_CreateOrEditT_StaffModal.es5.min.js")
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_StaffManage/Index.es5.min.js")
+    @Html.IncludeScript("~/Views/T_Staff/_CreateOrEditT_StaffModal.js")
+    @Html.IncludeScript("~/Views/T_Staff/Index.js")
 }
 <div class="row margin-bottom-5">
     <div class="col-xs-6">
@@ -40,10 +40,10 @@
         <button  id="ButtonReload" class="btn btn-primary blue"><i class="fa  fa-refresh"></i> @L("Refresh")</button>
 
 
-        @if (IsGranted(T_StaffAppPermissions.T_Staff_CreateT_Staff))
-        {
+        @*@if (IsGranted(T_StaffAppPermissions.T_Staff_CreateT_Staff))
+        {*@
             <button id="CreateNewT_StaffButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_Staff")</button>
-        }
+        @*}*@
     </div>
 </div>
 
@@ -66,6 +66,7 @@
 
 
     <div class="portlet-body">
+        <div id="jsTree" style="float:left"></div>
         <div id="T_StaffsTable"></div>
     </div>
 </div>

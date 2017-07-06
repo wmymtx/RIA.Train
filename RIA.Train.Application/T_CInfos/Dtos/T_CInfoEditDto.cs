@@ -34,13 +34,13 @@ namespace RIA.Train.Application.Dtos
         /// 培训项目外键
         /// </summary>
         [DisplayName("培训项目外键")]
-        public   int  Fk_Id { get; set; }
+        public   int Fk_Item_CInfo_Id { get; set; }
 
         /// <summary>
         /// 参培人员
         /// </summary>
         [DisplayName("参培人员")]
-        public   int  Fk_UserId { get; set; }
+        public   int Fk_CInfo_UserId { get; set; }
 
         /// <summary>
         /// 参培人员名字

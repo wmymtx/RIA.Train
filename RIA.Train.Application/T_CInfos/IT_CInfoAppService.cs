@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -24,6 +25,8 @@ namespace RIA.Train.Application
     {
         #region 培训信息配置表管理
 
+        Task BatchCreateOrUpdateT_CInfoAsync(BatchCreateOrUpdateT_CInfoInput inputList);
+        Task<JtableResult<List<T_CInfoListDto>>> GetPagedT_CInfosByItemIdAsync(int id);
         /// <summary>
         /// 根据查询条件获取培训信息配置表分页列表
         /// </summary>
@@ -39,7 +42,7 @@ namespace RIA.Train.Application
         /// </summary>
 		Task<T_CInfoListDto> GetT_CInfoByIdAsync(EntityDto<int> input);
 
-
+        T_CInfoListDto IsJoinItem(int item_id, int userId);
 
         /// <summary>
         /// 新增或更改培训信息配置表

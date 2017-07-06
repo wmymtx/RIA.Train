@@ -4,37 +4,36 @@
 (function () {
     $(function () {
 
-        var _$t_StaffsTable = $('#T_StaffsTable');
-        var _t_StaffService = abp.services.app.t_Staff;
+        var _$t_RequiresTable = $('#T_RequiresTable');
+        var _t_RequireService = abp.services.app.t_Require;
 
         var _permissions = {
-            create: abp.auth.hasPermission("Pages.T_Staff.CreateT_Staff"),
-            edit: abp.auth.hasPermission("Pages.T_Staff.EditT_Staff"),
-            'delete': abp.auth.hasPermission("Pages.T_Staff.DeleteT_Staff")
+            create: abp.auth.hasPermission("Pages.T_Require.CreateT_Require"),
+            edit: abp.auth.hasPermission("Pages.T_Require.EditT_Require"),
+            'delete': abp.auth.hasPermission("Pages.T_Require.DeleteT_Require")
 
         };
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_StaffManage/CreateOrEditT_StaffModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_StaffManage/_CreateOrEditT_StaffModal.es5.min.js',
-            modalClass: 'CreateOrEditT_StaffModal'
+            viewUrl: abp.appPath + 'T_Require/CreateOrEditT_RequireModal',
+            scriptUrl: abp.appPath + 'Views/T_Require/_CreateOrEditT_RequireModal.js',
+            modalClass: 'CreateOrEditT_RequireModal'
         });
 
     
 
 
 
-        _$t_StaffsTable.jtable({
+        _$t_RequiresTable.jtable({
 
-            title: app.localize('T_Staff'),
+            title: app.localize('T_Require'),
             paging: true,
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_StaffService.getPagedT_StaffsAsync
-        }
+                listAction: _t_RequireService.getPagedT_RequiresAsync
+        
             },
 
         fields: {
@@ -57,12 +56,12 @@
                         $('<button class="btn btn-default btn-xs" title="' + app.localize('Delete') + '"><i class="fa fa-trash-o"></i></button>')
                             .appendTo($span)
                             .click(function () {
-                                deleteT_Staff(data.record);
+                                deleteT_Require(data.record);
                             });
                     }
                     //添加
                     if (_permissions.create) {
-                        $("<button class='btn btn-default  btn-xs'  title='" + app.localize("CreateT_Staff") + "' ><i class='fa fa-plus'></i></button>")
+                        $("<button class='btn btn-default  btn-xs'  title='" + app.localize("CreateT_Require") + "' ><i class='fa fa-plus'></i></button>")
                             .appendTo($span)
                             .click(function () {
 							 _createOrEditModal.open();				                  
@@ -82,20 +81,32 @@
                 list: false
          }, 	  
 
-fK_GroupId: {
-            title: app.localize('FK_GroupId'),
+fk_Id: {
+            title: app.localize('Fk_Id'),
             width: '10%'
          },     
 	  
 
-staffName: {
-            title: app.localize('StaffName'),
+fk_UserId: {
+            title: app.localize('Fk_UserId'),
             width: '10%'
          },     
 	  
 
-creteTime: {
-            title: app.localize('CreteTime'),
+userName: {
+            title: app.localize('UserName'),
+            width: '10%'
+         },     
+	  
+
+content: {
+            title: app.localize('Content'),
+            width: '10%'
+         },     
+	  
+
+submitTime: {
+            title: app.localize('SubmitTime'),
             width: '10%'
          },     
 	 
@@ -105,7 +116,7 @@ creteTime: {
 
 		
 				   //打开添加窗口SPA
-        $('#CreateNewT_StaffButton').click(function () {
+        $('#CreateNewT_RequireButton').click(function () {
             //可选生成的对话框大小{size:'lg'}or{size:'sm'}
             //需要到_createContainer方法中添加,_args.size
             _createOrEditModal.open();
@@ -116,33 +127,33 @@ creteTime: {
 
         //刷新表格信息
         $("#ButtonReload").click(function () {
-            getT_Staffs();
+            getT_Requires();
         });
 
 
 
 
 //模糊查询功能
-function getT_Staffs(reload) {
+function getT_Requires(reload) {
     if (reload) {
-        _$t_StaffsTable.jtable('reload');
+        _$t_RequiresTable.jtable('reload');
     } else {
-        _$t_StaffsTable.jtable('load', {
-            filtertext: $('#T_StaffsTableFilter').val()
+        _$t_RequiresTable.jtable('load', {
+            filtertext: $('#T_RequiresTableFilter').val()
         });
     }
 }
 //
-//删除当前t_Staff实体
-function deleteT_Staff(t_Staff) {   
+//删除当前t_Require实体
+function deleteT_Require(t_Require) {   
     abp.message.confirm(
-        app.localize('T_StaffDeleteWarningMessage', t_Staff. fK_GroupId),
+        app.localize('T_RequireDeleteWarningMessage', t_Require. fk_Id),
             function (isConfirmed) {
                 if (isConfirmed) {
-                    _t_StaffService.deleteT_StaffAsync({
-                        id: t_Staff.id
+                    _t_RequireService.deleteT_RequireAsync({
+                        id: t_Require.id
                         }).done(function () {
-                            getT_Staffs(true);
+                            getT_Requires(true);
                             abp.notify.success(app.localize('SuccessfullyDeleted'));
                         });
                 }
@@ -153,25 +164,25 @@ function deleteT_Staff(t_Staff) {
  
 
 //导出为excel文档
-$('#ExportT_StaffsToExcelButton').click(function () {
-    _t_StaffService
-        .getT_StaffsToExcel({})
+$('#ExportT_RequiresToExcelButton').click(function () {
+    _t_RequireService
+        .getT_RequiresToExcel({})
             .done(function (result) {
                 app.downloadTempFile(result);
             });
 });
 //搜索
-$('#GetT_StaffsButton').click(function (e) {
+$('#GetT_RequiresButton').click(function (e) {
     e.preventDefault();
-    getT_Staffs();
+    getT_Requires();
 });
 
-//制作T_Staff事件,用于请求变化后，刷新表格信息
-abp.event.on('app.createOrEditT_StaffModalSaved', function () {
-    getT_Staffs(true);
+//制作T_Require事件,用于请求变化后，刷新表格信息
+abp.event.on('app.createOrEditT_RequireModalSaved', function () {
+    getT_Requires(true);
 });
 
-getT_Staffs();
+getT_Requires();
  
  
     });

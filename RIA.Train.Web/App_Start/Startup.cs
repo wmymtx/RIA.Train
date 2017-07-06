@@ -48,7 +48,7 @@ namespace RIA.Train.Web
                 app.UseGoogleAuthentication(CreateGoogleAuthOptions());
             }
 
-            app.MapSignalR();
+            //app.MapSignalR();
 
             //ENABLE TO USE HANGFIRE dashboard (Requires enabling Hangfire in TrainWebModule)
             //app.UseHangfireDashboard("/hangfire", new DashboardOptions

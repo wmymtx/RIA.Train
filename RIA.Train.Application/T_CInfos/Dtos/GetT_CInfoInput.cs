@@ -27,9 +27,11 @@ namespace RIA.Train.Application.Dtos
 		/// </summary>
 		public string FilterText { get; set; }
 
-		/// <summary>
-	    /// 用于排序的默认值
-		/// </summary>
+        public int? Fk_Item_CInfo_Id { get; set; }
+
+        /// <summary>
+        /// 用于排序的默认值
+        /// </summary>
         public void Normalize()
         {
             if (string.IsNullOrEmpty(Sorting))

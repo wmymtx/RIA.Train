@@ -1,6 +1,6 @@
 ﻿
 // 项目展示地址:"http://www.ddxc.org/"
- // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
+// 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
 // 项目展示地址:"http://www.yoyocms.com/"
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
@@ -15,17 +15,17 @@ using RIA.Train.Entities;
 
 namespace RIA.Train.Application.Dtos
 {
-	/// <summary>
+    /// <summary>
     /// 培训重点列表Dto
     /// </summary>
     [AutoMapFrom(typeof(T_KPoint))]
     public class T_KPointListDto : EntityDto<int>
     {
-        public      int Fk_Id { get; set; }
+        public int Fk_Item_KPoint_Id { get; set; }
         /// <summary>
         /// 培训重点
         /// </summary>
         [DisplayName("培训重点")]
-        public      string TrainContent { get; set; }
+        public string TrainContent { get; set; }
     }
 }

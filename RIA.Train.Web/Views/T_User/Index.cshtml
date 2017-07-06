@@ -1,7 +1,7 @@
 ﻿
 
 @using Abp.Web.Mvc.Extensions
-@using RIA.Train.Entities.Authorization
+@using RIA.Train.Core.Authorization
 @{
     ViewBag.CurrentPageName = T_UserAppPermissions.T_User;
     ViewBag.Title = L("T_User");
@@ -22,8 +22,8 @@
 <script src="~/libs/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 
   
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_UserManage/_CreateOrEditT_UserModal.es5.min.js")
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_UserManage/Index.es5.min.js")
+    @Html.IncludeScript("~/Views/T_User/_CreateOrEditT_UserModal.js")
+    @Html.IncludeScript("~/Views/T_User/Index.js")
 }
 <div class="row margin-bottom-5">
     <div class="col-xs-6">
@@ -40,10 +40,10 @@
         <button  id="ButtonReload" class="btn btn-primary blue"><i class="fa  fa-refresh"></i> @L("Refresh")</button>
 
 
-        @if (IsGranted(T_UserAppPermissions.T_User_CreateT_User))
-        {
+        @*@if (IsGranted(T_UserAppPermissions.T_User_CreateT_User))
+        {*@
             <button id="CreateNewT_UserButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_User")</button>
-        }
+        @*}*@
     </div>
 </div>
 

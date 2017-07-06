@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -33,11 +34,11 @@ namespace RIA.Train.Application
         /// 通过Id获取人员信息表信息进行编辑或修改 
         /// </summary>
         Task<GetT_StaffForEditOutput> GetT_StaffForEditAsync(NullableIdDto<int> input);
-
-		  /// <summary>
-        /// 通过指定id获取人员信息表ListDto信息
-        /// </summary>
-		Task<T_StaffListDto> GetT_StaffByIdAsync(EntityDto<int> input);
+        T_StaffEditDto ValidateUser(int loginNo, string password);
+          /// <summary>
+          /// 通过指定id获取人员信息表ListDto信息
+          /// </summary>
+        Task<T_StaffListDto> GetT_StaffByIdAsync(EntityDto<int> input);
 
 
 

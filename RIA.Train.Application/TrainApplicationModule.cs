@@ -16,7 +16,7 @@ namespace RIA.Train
                 //mapper.CreateMap<,>()
             });
 
-            Configuration.Authorization.Providers.Add<T_DepAppAuthorizationProvider>();
+           // Configuration.Authorization.Providers.Add<T_DepAppAuthorizationProvider>();
         }
 
         public override void Initialize()

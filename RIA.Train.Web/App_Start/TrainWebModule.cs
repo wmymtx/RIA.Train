@@ -10,6 +10,9 @@ using Abp.Web.Mvc;
 using Abp.Web.SignalR;
 using RIA.Train.Api;
 using Hangfire;
+using Abp.Configuration.Startup;
+using System.Web;
+using Abp.IO;
 
 namespace RIA.Train.Web
 {
@@ -26,7 +29,7 @@ namespace RIA.Train.Web
         {
             //Enable database based localization
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
-
+            Configuration.Modules.AbpWeb().AntiForgery.IsEnabled = false;
             //Configure navigation/menu
             Configuration.Navigation.Providers.Add<TrainNavigationProvider>();
 
@@ -44,6 +47,16 @@ namespace RIA.Train.Web
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            CommonBundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var server = HttpContext.Current.Server;
+            var appFolders = IocManager.Resolve<AppFolders>();
+
+            appFolders.SampleProfileImagesFolder = server.MapPath("~/Common/Images/SampleProfilePics");
+            appFolders.TempFileDownloadFolder = server.MapPath("~/Temp/Downloads");
+            appFolders.WebLogsFolder = server.MapPath("~/App_Data/Logs");
+
+            try { DirectoryHelper.CreateIfNotExists(appFolders.TempFileDownloadFolder); } catch { }
         }
     }
 }

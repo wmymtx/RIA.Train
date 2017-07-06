@@ -42,4 +42,6 @@ namespace RIA.Train.Application.Dtos
         public   string  UserName { get; set; }
 
     }
+
+
 }

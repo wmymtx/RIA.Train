@@ -1,7 +1,7 @@
 ﻿
 
 // 项目展示地址:"http://www.ddxc.org/"
- // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
+// 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
 // 项目展示地址:"http://www.yoyocms.com/"
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
@@ -14,16 +14,17 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
-	/// <summary>
+    /// <summary>
     /// 培训重点服务接口
     /// </summary>
     public interface IT_KPointAppService : IApplicationService
     {
         #region 培训重点管理
-
+        Task<PagedResultDto<T_KPointListDto>> GetPagedT_KPointsByItemIdAsync(GetT_KPointInput input);
         /// <summary>
         /// 根据查询条件获取培训重点分页列表
         /// </summary>
@@ -34,10 +35,10 @@ namespace RIA.Train.Application
         /// </summary>
         Task<GetT_KPointForEditOutput> GetT_KPointForEditAsync(NullableIdDto<int> input);
 
-		  /// <summary>
+        /// <summary>
         /// 通过指定id获取培训重点ListDto信息
         /// </summary>
-		Task<T_KPointListDto> GetT_KPointByIdAsync(EntityDto<int> input);
+        Task<T_KPointListDto> GetT_KPointByIdAsync(EntityDto<int> input);
 
 
 

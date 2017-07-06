@@ -4,8 +4,8 @@
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
 // <Author-作者>角落的白板笔</Author-作者>
-// Copyright © YoYoCms@中国.2017-05-25T22:50:29. All Rights Reserved.
-//<生成时间>2017-05-25T22:50:29</生成时间>
+// Copyright © YoYoCms@中国.2017-06-03T22:37:56. All Rights Reserved.
+//<生成时间>2017-06-03T22:37:56</生成时间>
 using System;
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;

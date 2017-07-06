@@ -2,7 +2,7 @@
 using Abp.Web.Mvc.Authorization;
 using RIA.Train.Application;
 using RIA.Train.Application.Dtos;
-using RIA.Train.Core.T_ItemCore.Authorization;
+using RIA.Train.Core.Authorization;
 using RIA.Train.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace RIA.Train.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class T_ItemController : TrainControllerBase
     {
         // GET: T_Item
@@ -41,7 +42,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_ItemAppPermissions.T_Item_CreateT_Item, T_ItemAppPermissions.T_Item_EditT_Item)]
+       // [AbpMvcAuthorize(T_ItemAppPermissions.T_Item_CreateT_Item, T_ItemAppPermissions.T_Item_EditT_Item)]
         public async Task<PartialViewResult> CreateOrEditT_ItemModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };
@@ -52,6 +53,18 @@ namespace RIA.Train.Web.Controllers
 
 
             return PartialView("_CreateOrEditT_ItemModal", viewModel);
+        }
+
+        public  PartialViewResult ShowT_ItemModal(int? id)
+        {
+            var input = new NullableIdDto<int> { Id = id };
+
+            SelectStaffModel viewModel = new SelectStaffModel() { Id = int.Parse(input.Id.ToString()) };
+
+            //var viewModel = new CreateOrEditT_ItemModalViewModel(output);
+
+
+            return PartialView("ShowT_ItemModal", viewModel);
         }
     }
 }

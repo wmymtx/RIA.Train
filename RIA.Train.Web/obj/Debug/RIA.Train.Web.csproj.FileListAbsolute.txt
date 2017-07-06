@@ -143,3 +143,9 @@ D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.csprojResolveAssem
 D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.dll
 D:\myWork\Train20170520\RIA.Train.Web\obj\Debug\RIA.Train.Web.pdb
 D:\myWork\Train20170520\RIA.Train.Web\bin\System.Linq.Dynamic.dll
+D:\myWork\Train20170520\RIA.Train.Web\bin\Senparc.Weixin.dll
+D:\myWork\Train20170520\RIA.Train.Web\bin\Senparc.Weixin.MP.dll
+D:\myWork\Train20170520\RIA.Train.Web\bin\Senparc.Weixin.xml
+D:\myWork\Train20170520\RIA.Train.Web\bin\Senparc.Weixin.MP.xml
+D:\myWork\Train20170520\RIA.Train.Web\bin\EPPlus.dll
+D:\myWork\Train20170520\RIA.Train.Web\bin\EPPlus.xml

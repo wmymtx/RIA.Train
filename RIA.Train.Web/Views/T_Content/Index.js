@@ -4,37 +4,36 @@
 (function () {
     $(function () {
 
-        var _$t_ItemsTable = $('#T_ItemsTable');
-        var _t_ItemService = abp.services.app.t_Item;
+        var _$t_ContentsTable = $('#T_ContentsTable');
+        var _t_ContentService = abp.services.app.t_Content;
 
         var _permissions = {
-            create: abp.auth.hasPermission("Pages.T_Item.CreateT_Item"),
-            edit: abp.auth.hasPermission("Pages.T_Item.EditT_Item"),
-            'delete': abp.auth.hasPermission("Pages.T_Item.DeleteT_Item")
+            create: abp.auth.hasPermission("Pages.T_Content.CreateT_Content"),
+            edit: abp.auth.hasPermission("Pages.T_Content.EditT_Content"),
+            'delete': abp.auth.hasPermission("Pages.T_Content.DeleteT_Content")
 
         };
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_ItemManage/CreateOrEditT_ItemModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_ItemManage/_CreateOrEditT_ItemModal.es5.min.js',
-            modalClass: 'CreateOrEditT_ItemModal'
+            viewUrl: abp.appPath + 'T_Content/CreateOrEditT_ContentModal',
+            scriptUrl:  'Views/T_Content/_CreateOrEditT_ContentModal.js',
+            modalClass: 'CreateOrEditT_ContentModal'
         });
 
     
 
 
 
-        _$t_ItemsTable.jtable({
+        _$t_ContentsTable.jtable({
 
-            title: app.localize('T_Item'),
+            title: app.localize('T_Content'),
             paging: true,
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_ItemService.getPagedT_ItemsAsync
-        }
+                listAction:  _t_ContentService.getPagedT_ContentsAsync
+        
             },
 
         fields: {
@@ -46,29 +45,29 @@
                 display: function (data) {
                     var $span = $('<span></span>');
                     //编辑
-                    if (_permissions.edit) {
+                    //if (_permissions.edit) {
                         $('<button class="btn btn-default btn-xs" title="' + app.localize('Edit') + '"><i class="fa fa-edit"></i></button>')
                             .appendTo($span)
                             .click(function () {
  _createOrEditModal.open({ id: data.record.id });                            });
-                    }
+                    //}
                     //删除
-                    if (_permissions.delete) {
+                    //if (_permissions.delete) {
                         $('<button class="btn btn-default btn-xs" title="' + app.localize('Delete') + '"><i class="fa fa-trash-o"></i></button>')
                             .appendTo($span)
                             .click(function () {
-                                deleteT_Item(data.record);
+                                deleteT_Content(data.record);
                             });
-                    }
+                    //}
                     //添加
-                    if (_permissions.create) {
-                        $("<button class='btn btn-default  btn-xs'  title='" + app.localize("CreateT_Item") + "' ><i class='fa fa-plus'></i></button>")
+                   // if (_permissions.create) {
+                        $("<button class='btn btn-default  btn-xs'  title='" + app.localize("CreateT_Content") + "' ><i class='fa fa-plus'></i></button>")
                             .appendTo($span)
                             .click(function () {
 							 _createOrEditModal.open();				                  
 
                             });
-                    }
+                    //}
 
                     return $span;
             }
@@ -82,14 +81,8 @@
                 list: false
          }, 	  
 
-projectName: {
-            title: app.localize('ProjectName'),
-            width: '10%'
-         },     
-	  
-
-createTime: {
-            title: app.localize('CreateTime'),
+content: {
+            title: app.localize('Content'),
             width: '10%'
          },     
 	 
@@ -99,7 +92,7 @@ createTime: {
 
 		
 				   //打开添加窗口SPA
-        $('#CreateNewT_ItemButton').click(function () {
+        $('#CreateNewT_ContentButton').click(function () {
             //可选生成的对话框大小{size:'lg'}or{size:'sm'}
             //需要到_createContainer方法中添加,_args.size
             _createOrEditModal.open();
@@ -110,33 +103,33 @@ createTime: {
 
         //刷新表格信息
         $("#ButtonReload").click(function () {
-            getT_Items();
+            getT_Contents();
         });
 
 
 
 
 //模糊查询功能
-function getT_Items(reload) {
+function getT_Contents(reload) {
     if (reload) {
-        _$t_ItemsTable.jtable('reload');
+        _$t_ContentsTable.jtable('reload');
     } else {
-        _$t_ItemsTable.jtable('load', {
-            filtertext: $('#T_ItemsTableFilter').val()
+        _$t_ContentsTable.jtable('load', {
+            filtertext: $('#T_ContentsTableFilter').val()
         });
     }
 }
 //
-//删除当前t_Item实体
-function deleteT_Item(t_Item) {   
+//删除当前t_Content实体
+function deleteT_Content(t_Content) {   
     abp.message.confirm(
-        app.localize('T_ItemDeleteWarningMessage', t_Item. projectName),
+        app.localize('T_ContentDeleteWarningMessage', t_Content. content),
             function (isConfirmed) {
                 if (isConfirmed) {
-                    _t_ItemService.deleteT_ItemAsync({
-                        id: t_Item.id
+                    _t_ContentService.deleteT_ContentAsync({
+                        id: t_Content.id
                         }).done(function () {
-                            getT_Items(true);
+                            getT_Contents(true);
                             abp.notify.success(app.localize('SuccessfullyDeleted'));
                         });
                 }
@@ -147,25 +140,25 @@ function deleteT_Item(t_Item) {
  
 
 //导出为excel文档
-$('#ExportT_ItemsToExcelButton').click(function () {
-    _t_ItemService
-        .getT_ItemsToExcel({})
+$('#ExportT_ContentsToExcelButton').click(function () {
+    _t_ContentService
+        .getT_ContentsToExcel({})
             .done(function (result) {
                 app.downloadTempFile(result);
             });
 });
 //搜索
-$('#GetT_ItemsButton').click(function (e) {
+$('#GetT_ContentsButton').click(function (e) {
     e.preventDefault();
-    getT_Items();
+    getT_Contents();
 });
 
-//制作T_Item事件,用于请求变化后，刷新表格信息
-abp.event.on('app.createOrEditT_ItemModalSaved', function () {
-    getT_Items(true);
+//制作T_Content事件,用于请求变化后，刷新表格信息
+abp.event.on('app.createOrEditT_ContentModalSaved', function () {
+    getT_Contents(true);
 });
 
-getT_Items();
+getT_Contents();
  
  
     });

@@ -9,7 +9,7 @@
 //<生成时间>2017-05-21T21:42:11</生成时间>
 
 
-namespace RIA.Train.Core.T_ItemCore.Authorization
+namespace RIA.Train.Core.Authorization
 {
 	 /// <summary>
 	 /// 定义系统的权限名称的字符串常量。

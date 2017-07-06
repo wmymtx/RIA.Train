@@ -1,0 +1,29 @@
+﻿@using Abp.Extensions
+@using RIA.Train.Web.Models
+@using RIA.Train.Web.Models.Common
+@model SelectStaffModel
+<style>
+    #SelectedRowList {
+        margin-top: 5px;
+        border: 1px solid #999;
+        background-color: #EEE;
+        padding: 5px;
+    }
+</style>
+@* 初始化头部 *@
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel("选择人员"))
+<form name="t_StaffInformationsForm" role="form" novalidate class="form-validation">
+    <div hidden="hidden">
+        <input name="fk_Id" id="fk_Id" type="hidden" value="@Model.Id" />
+    </div>
+    <div class="portlet-body">
+        <div id="jsTree" style="float:left"></div>
+        <div id="T_StaffsTable"></div>
+    </div>
+    <div id="SelectedRowList">
+
+    </div>
+</form>
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+

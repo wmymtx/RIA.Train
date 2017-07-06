@@ -41,7 +41,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_RequireAppPermissions.T_Require_CreateT_Require, T_RequireAppPermissions.T_Require_EditT_Require)]
+       // [AbpMvcAuthorize(T_RequireAppPermissions.T_Require_CreateT_Require, T_RequireAppPermissions.T_Require_EditT_Require)]
         public async Task<PartialViewResult> CreateOrEditT_RequireModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };

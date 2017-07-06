@@ -1,7 +1,7 @@
 ﻿
 
 @using Abp.Web.Mvc.Extensions
-@using RIA.Train.Entities.Authorization
+@using RIA.Train.Core.Authorization
 @{
     ViewBag.CurrentPageName = T_Estimate_DetailAppPermissions.T_Estimate_Detail;
     ViewBag.Title = L("T_Estimate_Detail");
@@ -22,8 +22,8 @@
 <script src="~/libs/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 
   
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_Estimate_DetailManage/_CreateOrEditT_Estimate_DetailModal.es5.min.js")
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_Estimate_DetailManage/Index.es5.min.js")
+    @Html.IncludeScript("~/Views/T_Estimate_Detail/_CreateOrEditT_Estimate_DetailModal.js")
+    @Html.IncludeScript("~/Views/T_Estimate_Detail/Index.js")
 }
 <div class="row margin-bottom-5">
     <div class="col-xs-6">
@@ -40,10 +40,10 @@
         <button  id="ButtonReload" class="btn btn-primary blue"><i class="fa  fa-refresh"></i> @L("Refresh")</button>
 
 
-        @if (IsGranted(T_Estimate_DetailAppPermissions.T_Estimate_Detail_CreateT_Estimate_Detail))
-        {
+        @*@if (IsGranted(T_Estimate_DetailAppPermissions.T_Estimate_Detail_CreateT_Estimate_Detail))
+        {*@
             <button id="CreateNewT_Estimate_DetailButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_Estimate_Detail")</button>
-        }
+        @*}*@
     </div>
 </div>
 

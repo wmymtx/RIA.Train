@@ -16,8 +16,8 @@
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_GroupManage/CreateOrEditT_GroupModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_GroupManage/_CreateOrEditT_GroupModal.es5.min.js',
+            viewUrl: abp.appPath + 'T_Group/CreateOrEditT_GroupModal',
+            scriptUrl:  'Views/T_Group/_CreateOrEditT_GroupModal.js',
             modalClass: 'CreateOrEditT_GroupModal'
         });
 
@@ -32,9 +32,8 @@
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_GroupService.getPagedT_GroupsAsync
-        }
+                listAction: _t_GroupService.getPagedT_GroupsAsync
+        
             },
 
         fields: {
@@ -53,13 +52,13 @@
  _createOrEditModal.open({ id: data.record.id });                            });
                     }
                     //删除
-                    if (_permissions.delete) {
+                    //if (_permissions.delete) {
                         $('<button class="btn btn-default btn-xs" title="' + app.localize('Delete') + '"><i class="fa fa-trash-o"></i></button>')
                             .appendTo($span)
                             .click(function () {
                                 deleteT_Group(data.record);
                             });
-                    }
+                   // }
                     //添加
                     if (_permissions.create) {
                         $("<button class='btn btn-default  btn-xs'  title='" + app.localize("CreateT_Group") + "' ><i class='fa fa-plus'></i></button>")
@@ -82,14 +81,14 @@
                 list: false
          }, 	  
 
-fK_DepId: {
-            title: app.localize('FK_DepId'),
+groupName: {
+            title: app.localize('GroupName'),
             width: '10%'
          },     
 	  
 
-groupName: {
-            title: app.localize('GroupName'),
+parentId: {
+            title: app.localize('ParentId'),
             width: '10%'
          },     
 	 
@@ -130,7 +129,7 @@ function getT_Groups(reload) {
 //删除当前t_Group实体
 function deleteT_Group(t_Group) {   
     abp.message.confirm(
-        app.localize('T_GroupDeleteWarningMessage', t_Group. fK_DepId),
+        app.localize('T_GroupDeleteWarningMessage', t_Group. groupName),
             function (isConfirmed) {
                 if (isConfirmed) {
                     _t_GroupService.deleteT_GroupAsync({

@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace RIA.Train.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class T_StaffController : TrainControllerBase
     {
         // GET: T_Staff
@@ -41,17 +42,47 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_StaffAppPermissions.T_Staff_CreateT_Staff, T_StaffAppPermissions.T_Staff_EditT_Staff)]
+       // [AbpMvcAuthorize(T_StaffAppPermissions.T_Staff_CreateT_Staff, T_StaffAppPermissions.T_Staff_EditT_Staff)]
         public async Task<PartialViewResult> CreateOrEditT_StaffModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };
 
-            var output = await _t_StaffAppService.GetT_StaffForEditAsync(input);
+            //var output = await _t_StaffAppService.GetT_StaffForEditAsync(input);
+
+            GetT_StaffForEditOutput output = null;
+
+            if (input.Id > 100000)
+            {
+                output = new GetT_StaffForEditOutput();
+                var parentId = int.Parse(input.Id.ToString().Substring(6));
+                output.T_Staff = new T_StaffEditDto();
+                output.T_Staff.FK_Staff_GroupId = parentId;
+
+            }
+            else
+            {
+                output = await _t_StaffAppService.GetT_StaffForEditAsync(input);
+            }
 
             var viewModel = new CreateOrEditT_StaffModalViewModel(output);
 
 
             return PartialView("_CreateOrEditT_StaffModal", viewModel);
+        }
+
+
+        public  PartialViewResult SelectStaffModal(int? id)
+        {
+            var input = new NullableIdDto<int> { Id = id };
+
+            //var output = await _t_StaffAppService.GetT_StaffForEditAsync(input);
+            SelectStaffModel viewModel = new SelectStaffModel() { Id = int.Parse(input.Id.ToString()) };
+
+
+            //var viewModel = new CreateOrEditT_StaffModalViewModel(output);
+
+
+            return PartialView("SelectStaffModal", viewModel);
         }
 
     }

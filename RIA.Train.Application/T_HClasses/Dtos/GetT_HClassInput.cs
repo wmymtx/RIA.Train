@@ -25,7 +25,11 @@ namespace RIA.Train.Application.Dtos
 		/// <summary>
 	    /// 模糊查询参数
 		/// </summary>
-		public string FilterText { get; set; }
+        /// 
+
+        public int? FK_ClassId { get; set; }
+
+        public string FilterText { get; set; }
 
 		/// <summary>
 	    /// 用于排序的默认值

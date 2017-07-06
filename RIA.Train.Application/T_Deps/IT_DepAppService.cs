@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -27,7 +28,7 @@ namespace RIA.Train.Application
         /// <summary>
         /// 根据查询条件获取部门表分页列表
         /// </summary>
-        Task<PagedResultDto<T_DepListDto>> GetPagedT_DepsAsync(GetT_DepInput input);
+        Task<JtableResult<List<T_DepListDto>>> GetPagedT_DepsAsync(GetT_DepInput input);
 
         /// <summary>
         /// 通过Id获取部门表信息进行编辑或修改 

@@ -34,24 +34,40 @@ namespace RIA.Train.Web.Controllers
 
         }
 
-
+        
 
         /// <summary>
         /// 根据id获取进行编辑或者添加的用户信息
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_KPointAppPermissions.T_KPoint_CreateT_KPoint, T_KPointAppPermissions.T_KPoint_EditT_KPoint)]
+      //  [AbpMvcAuthorize(T_KPointAppPermissions.T_KPoint_CreateT_KPoint, T_KPointAppPermissions.T_KPoint_EditT_KPoint)]
         public async Task<PartialViewResult> CreateOrEditT_KPointModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };
 
-            var output = await _t_KPointAppService.GetT_KPointForEditAsync(input);
+            GetT_KPointForEditOutput output = null;
+
+            if (input.Id > 100000)
+            {
+                output = new GetT_KPointForEditOutput();
+                var parentId = int.Parse(input.Id.ToString().Substring(6));
+                output.T_KPoint = new T_KPointEditDto();
+                output.T_KPoint.Fk_Item_KPoint_Id = parentId;
+
+            }
+            else
+            {
+                output = await _t_KPointAppService.GetT_KPointForEditAsync(input);
+            }
+            // var output = await _t_KPointAppService.GetT_KPointForEditAsync(input);
 
             var viewModel = new CreateOrEditT_KPointModalViewModel(output);
 
 
             return PartialView("_CreateOrEditT_KPointModal", viewModel);
         }
+
+
     }
 }

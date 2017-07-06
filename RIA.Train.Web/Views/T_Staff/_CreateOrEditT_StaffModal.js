@@ -1,4 +1,5 @@
-﻿
+﻿app = app || {};
+app.modals = app.modals || {};
 (function ($) {
     app.modals.CreateOrEditT_StaffModal = function () {
 
@@ -27,10 +28,22 @@
 
 						
 			 
-			   	      
-								 //渲染select
-								    $("#fK_GroupIdEdit").selectpicker();
+			   	 
 
+
+						
+			 
+			   	 
+
+
+						
+			 
+			   	 
+
+
+						
+			 
+			   	 
 
 
 						
@@ -42,15 +55,15 @@
 			 
 			   	 	 	 // 初始化 CreteTime 的包含时分秒的日期控件
 		   //包含时分秒的日期选择器             
-            $("input[name=CreteTime]").datetimepicker({
-                autoclose: true,
-                isRTL: false,
-                format: "yyyy-mm-dd hh:ii",
-                pickerPosition: ("bottom-left"),
-				//默认为E文按钮要中文，自己去找语言包
-				   todayBtn: true,
-				     language: "zh-CN"
-            });
+    //        $("input[name=CreteTime]").datetimepicker({
+    //            autoclose: true,
+    //            isRTL: false,
+    //            format: "yyyy-mm-dd hh:ii",
+    //            pickerPosition: ("bottom-left"),
+				////默认为E文按钮要中文，自己去找语言包
+				//   todayBtn: true,
+				//     language: "zh-CN"
+    //        });
 	 
 
 

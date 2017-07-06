@@ -1,0 +1,52 @@
+﻿
+@using Abp.Extensions
+@using Abp.Application.Services.Dto
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
+
+@model CreateOrEditT_HClassModalViewModel
+
+@* 初始化头部 *@
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_HClass") + ": " + Model.T_HClass.FK_ClassId) : L("CreateT_HClass")))
+
+
+<!--html代码区域-->
+<div class="modal-body">
+    <form name="t_HClassInformationsForm"   role="form" novalidate class="form-validation">
+ <input type="hidden" name="Id" value="@Model.T_HClass.Id" />
+ <div class="row>
+            
+               
+	     <div hidden="hidden">           
+            @if (Model.IsEditMode)
+            {
+                <input type="hidden" name="Id" value="@Model.T_HClass.Id"/>
+            }
+        </div>
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control " type="text" name="FK_ClassId" value="@Model.T_HClass.FK_ClassId"	 />			
+            <label>@L("FK_ClassId") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control " type="text" name="FK_UserId" value="@Model.T_HClass.FK_UserId"	 />			
+            <label>@L("FK_UserId") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control " type="text" name="UserName" value="@Model.T_HClass.UserName"		maxlength="30"  />			
+            <label>@L("UserName") </label>
+        </div>
+   
+	                  
+            </div>
+    </form>
+</div>
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+ 

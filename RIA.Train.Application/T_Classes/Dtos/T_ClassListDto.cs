@@ -46,5 +46,8 @@ namespace RIA.Train.Application.Dtos
         /// </summary>
         [DisplayName("创建时间")]
         public      DateTime? CreateTime { get; set; }
+
+        public string ProjectName { get; set; }
+
     }
 }

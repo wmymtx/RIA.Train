@@ -1,7 +1,7 @@
 ﻿
 
 // 项目展示地址:"http://www.ddxc.org/"
- // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
+// 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
 // 项目展示地址:"http://www.yoyocms.com/"
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
@@ -14,10 +14,11 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
-	/// <summary>
+    /// <summary>
     /// 培训项目设置服务接口
     /// </summary>
     public interface IT_ItemAppService : IApplicationService
@@ -33,13 +34,13 @@ namespace RIA.Train.Application
         /// 通过Id获取培训项目设置信息进行编辑或修改 
         /// </summary>
         Task<GetT_ItemForEditOutput> GetT_ItemForEditAsync(NullableIdDto<int> input);
-
-		  /// <summary>
+        WeChatItemListDto GetT_ItemById(int id);
+        /// <summary>
         /// 通过指定id获取培训项目设置ListDto信息
         /// </summary>
-		Task<T_ItemListDto> GetT_ItemByIdAsync(EntityDto<int> input);
+        Task<T_ItemListDto> GetT_ItemByIdAsync(EntityDto<int> input);
 
-
+        //List<T_ItemListDto> GetJoinItem(int userId);
 
         /// <summary>
         /// 新增或更改培训项目设置

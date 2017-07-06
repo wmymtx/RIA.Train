@@ -84,3 +84,5 @@ D:\myWork\Train20170520\Tests\RIA.Train.Tests\bin\Debug\xunit.execution.desktop.
 D:\myWork\Train20170520\Tests\RIA.Train.Tests\obj\Debug\RIA.Train.Tests.csprojResolveAssemblyReference.cache
 D:\myWork\Train20170520\Tests\RIA.Train.Tests\obj\Debug\RIA.Train.Tests.dll
 D:\myWork\Train20170520\Tests\RIA.Train.Tests\obj\Debug\RIA.Train.Tests.pdb
+D:\myWork\Train20170520\Tests\RIA.Train.Tests\bin\Debug\EPPlus.dll
+D:\myWork\Train20170520\Tests\RIA.Train.Tests\bin\Debug\EPPlus.xml

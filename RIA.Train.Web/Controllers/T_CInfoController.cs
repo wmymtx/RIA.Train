@@ -41,7 +41,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_CInfoAppPermissions.T_CInfo_CreateT_CInfo, T_CInfoAppPermissions.T_CInfo_EditT_CInfo)]
+      //  [AbpMvcAuthorize(T_CInfoAppPermissions.T_CInfo_CreateT_CInfo, T_CInfoAppPermissions.T_CInfo_EditT_CInfo)]
         public async Task<PartialViewResult> CreateOrEditT_CInfoModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };

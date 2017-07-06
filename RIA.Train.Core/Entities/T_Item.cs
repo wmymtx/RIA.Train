@@ -12,7 +12,7 @@ namespace RIA.Train.Entities
     /// <summary>
     /// 培训项目设置
     /// </summary>
-   public class T_Item:Entity<int>
+    public class T_Item : Entity<int>
     {
         /// <summary>
         /// 项目名称
@@ -29,5 +29,14 @@ namespace RIA.Train.Entities
         /// 创建人Id
         /// </summary>
         public virtual int CreatorUserId { get; set; }
+
+        public virtual List<T_KPoint> T_KPoints { get; set; }
+
+        public virtual List<T_CInfo> T_CInfos { get; set; }
+
+        public T_Item()
+        {
+            CreateTime = DateTime.Now;
+        }
     }
 }

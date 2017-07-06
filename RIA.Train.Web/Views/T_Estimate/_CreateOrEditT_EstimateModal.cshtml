@@ -1,13 +1,13 @@
 ﻿
 @using Abp.Extensions
 @using Abp.Application.Services.Dto
-@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
-@using RIA.Train.Web.Areas.Mpa.Models.T_EstimateManage
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
 
 @model CreateOrEditT_EstimateModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Estimate") + ": " + Model.T_Estimate.FK_ClassId) : L("CreateT_Estimate")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Estimate") + ": " + Model.T_Estimate.FK_ClassId) : L("CreateT_Estimate")))
 
 
 <!--html代码区域-->
@@ -55,5 +55,5 @@
             </div>
     </form>
 </div>
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
  

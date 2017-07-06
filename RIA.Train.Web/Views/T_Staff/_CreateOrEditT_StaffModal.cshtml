@@ -1,13 +1,13 @@
 ﻿
 @using Abp.Extensions
 @using Abp.Application.Services.Dto
-@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
-@using RIA.Train.Web.Areas.Mpa.Models.T_StaffManage
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
 
 @model CreateOrEditT_StaffModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Staff") + ": " + Model.T_Staff.FK_GroupId) : L("CreateT_Staff")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Staff") + ": " + Model.T_Staff.FK_Staff_GroupId) : L("CreateT_Staff")))
 
 
 <!--html代码区域-->
@@ -25,16 +25,9 @@
         </div>
 	                  
                
- 
-	 <div class="form-group ">
-            <label for="fK_GroupIdEdit">@L("FK_GroupId")</label>
-            @Html.DropDownList("FK_GroupId", Model.FK_Groups.Select(a => a.ToSelectListItem()), new
-            {
-                @class = "form-control selectpicker",
-                data_live_search = "true",
-                id = "fK_GroupIdEdit"
-            })
-        </div> 
+		     <div hidden="hidden">       
+                <input type="hidden" name="FK_Staff_GroupId" value="@Model.T_Staff.FK_Staff_GroupId"/>
+        </div>
 	                  
                
   	<div class="form-group form-md-line-input form-md-floating-label  ">
@@ -44,21 +37,28 @@
    
 	                  
                
-	    <div class="form-group form-md-line-input form-md-floating-label no-hint">
-            <label>@L("CreteTime"):   </label>            
-                <div class="input-group  date form_datetime">
-                    <input type="text" name="CreteTime" value="@Model.T_Staff.CreteTime" readonly class="form-control">
-                    <span class="input-group-btn">
-                        <button class="btn default date-set" type="button">
-                            <i class="fa fa-calendar"></i>
-                        </button>
-                    </span>
-                </div>
-        
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control " type="text" name="LoginNo" value="@Model.T_Staff.LoginNo"	 />			
+            <label>@L("LoginNo") </label>
         </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_Staff.PassWord.IsNullOrEmpty() ? "" : " edited")" type="text" name="PassWord" value="@Model.T_Staff.PassWord"		maxlength="50"  />			
+            <label>@L("PassWord") </label>
+        </div>
+   
+	                  
+               
+  	<div class="form-group form-md-line-input form-md-floating-label  ">
+            <input class="maxlength-handler form-control @(Model.T_Staff.OpenId.IsNullOrEmpty() ? "" : " edited")" type="text" name="OpenId" value="@Model.T_Staff.OpenId"		maxlength="100"  />			
+            <label>@L("OpenId") </label>
+        </div>
+   
 	                  
             </div>
     </form>
 </div>
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
  

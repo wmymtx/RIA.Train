@@ -12,7 +12,7 @@ using Abp.Authorization;
 using Abp.Localization;
 using RIA.Train.Authorization;
 
-namespace RIA.Train.Core.T_ItemCore.Authorization
+namespace RIA.Train.Core.Authorization
 {
 	/// <summary>
     /// 权限配置都在这里。

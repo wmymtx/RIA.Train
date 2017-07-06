@@ -64,5 +64,57 @@
     <text name="CreateT_Dep" value="CreateT_Dep" />
     <text name="EditT_Dep" value="EditT_Dep" />
     <text name="DeleteT_Dep" value="DeleteT_Dep" />
+
+    <!-- 培训信息配置表english管理 -->
+    <text name="	T_CInfoHeaderInfo" value="培训信息配置表List" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="Fk_UserId" value="参培人员" />
+
+    <text name="T_CInfo" value="ManagementT_CInfo" />
+    <text name="CreateT_CInfo" value="CreateT_CInfo" />
+    <text name="EditT_CInfo" value="EditT_CInfo" />
+    <text name="DeleteT_CInfo" value="DeleteT_CInfo" />
+
+    <!-- 培训信息配置表english管理 -->
+    <text name="	T_ClassHeaderInfo" value="培训信息配置表List" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="TrainingTime" value="培训时间" />
+    <text name="TrainingPlace" value="培训地点" />
+    <text name="TrainintTeacher" value="培训教师" />
+    <text name="CreateTime" value="创建时间" />
+
+    <text name="T_Class" value="ManagementT_Class" />
+    <text name="CreateT_Class" value="CreateT_Class" />
+    <text name="EditT_Class" value="EditT_Class" />
+    <text name="DeleteT_Class" value="DeleteT_Class" />
+
+    <!-- 考评内容（档次）english管理 -->
+    <text name="	T_ContentHeaderInfo" value="考评内容（档次）List" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="Content" value="考评内容" />
+
+    <text name="T_Content" value="ManagementT_Content" />
+    <text name="CreateT_Content" value="CreateT_Content" />
+    <text name="EditT_Content" value="EditT_Content" />
+    <text name="DeleteT_Content" value="DeleteT_Content" />
+
+    <!-- 班组表english管理 -->
+    <text name="	T_GroupHeaderInfo" value="班组表List" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="GroupName" value="班组" />
+
+    <text name="T_Group" value="ManagementT_Group" />
+    <text name="CreateT_Group" value="CreateT_Group" />
+    <text name="EditT_Group" value="EditT_Group" />
+    <text name="DeleteT_Group" value="DeleteT_Group" />
+
+    <!-- 培训班人员信息表english管理 -->
+    <text name="	T_HClassHeaderInfo" value="培训班人员信息表List" />
+    <!--//用于表格展示的数据信息的标题-->
+
+    <text name="T_HClass" value="ManagementT_HClass" />
+    <text name="CreateT_HClass" value="CreateT_HClass" />
+    <text name="EditT_HClass" value="EditT_HClass" />
+    <text name="DeleteT_HClass" value="DeleteT_HClass" />
   </texts>
 </localizationDictionary>

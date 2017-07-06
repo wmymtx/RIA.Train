@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -28,7 +29,7 @@ namespace RIA.Train.Application
         /// 根据查询条件获取培训班人员信息表分页列表
         /// </summary>
         Task<PagedResultDto<T_HClassListDto>> GetPagedT_HClasssAsync(GetT_HClassInput input);
-
+        T_HClassEditDto IsJoinClass(int classId, int userId);
         /// <summary>
         /// 通过Id获取培训班人员信息表信息进行编辑或修改 
         /// </summary>
@@ -39,7 +40,7 @@ namespace RIA.Train.Application
         /// </summary>
 		Task<T_HClassListDto> GetT_HClassByIdAsync(EntityDto<int> input);
 
-
+        Task BatchCreateOrUpdateT_HClassAsync(BatchCreateOrUpdateT_HClassInput inputList);
 
         /// <summary>
         /// 新增或更改培训班人员信息表

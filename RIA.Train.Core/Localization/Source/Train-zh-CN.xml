@@ -4,7 +4,7 @@
     <text name="HomePage" value="主页" />
     <text name="About" value="关于我们" />
     <text name="WellcomeMessage" value="欢迎使用 Train!" />
-    
+
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
 
@@ -25,8 +25,10 @@
     <text name="Create new user" value="新建用户"/>
     <text name="User name" value="用户名"/>
 
+    <text name="T_Item" value="培训项目" />
+    <text name="T_KPoint" value="项目培训重点"/>
     <text name="MustBe_Required" value="不能为空" />
-
+    <text name="SavedSuccessfully" value="保存成功"/>
     <text name="T_Dep" value="部门表" />
     <text name="T_DepHeaderInfo" value="部门表管理列表" />
     <text name="CreateT_Dep" value="新增部门表" />
@@ -40,7 +42,107 @@
     <!--//用于表格展示的数据信息的标题-->
     <text name="DepName" value="部门" />
 
+    <!-- 培训信息配置表管理 -->
+    <text name="T_CInfo" value="培训信息人员配置表" />
+    <text name="T_CInfoHeaderInfo" value="培训信息配置表管理列表" />
+    <text name="CreateT_CInfo" value="新增培训信息配置表" />
+    <text name="EditT_CInfo" value="编辑培训信息配置表" />
+    <text name="DeleteT_CInfo" value="删除培训信息配置表" />
+
+
+
+
+    <text name="T_CInfoDeleteWarningMessage" value="培训信息配置表名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="UserName" value="参培人员名字" />
+
+    <!-- 培训信息配置表管理 -->
+    <text name="T_Class" value="培训信息配置表" />
+    <text name="T_ClassHeaderInfo" value="培训信息配置表管理列表" />
+    <text name="CreateT_Class" value="新增培训信息配置表" />
+    <text name="EditT_Class" value="编辑培训信息配置表" />
+    <text name="DeleteT_Class" value="删除培训信息配置表" />
+
+
+
+
+    <text name="T_ClassDeleteWarningMessage" value="培训信息配置表名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="TrainingTime" value="培训时间" />
+    <text name="TrainingPlace" value="培训地点" />
+    <text name="TrainintTeacher" value="培训教师" />
+    <text name="CreateTime" value="创建时间" />
+
+    <!-- 考评内容（档次）管理 -->
+    <text name="T_Content" value="考评内容（档次）" />
+    <text name="T_ContentHeaderInfo" value="考评内容（档次）管理列表" />
+    <text name="CreateT_Content" value="新增考评内容（档次）" />
+    <text name="EditT_Content" value="编辑考评内容（档次）" />
+    <text name="DeleteT_Content" value="删除考评内容（档次）" />
+
+
+
+
+    <text name="T_ContentDeleteWarningMessage" value="考评内容（档次）名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="Content" value="考评内容" />
+
+    <!-- 班组表管理 -->
+    <text name="T_Group" value="班组表" />
+    <text name="T_GroupHeaderInfo" value="班组表管理列表" />
+    <text name="CreateT_Group" value="新增班组表" />
+    <text name="EditT_Group" value="编辑班组表" />
+    <text name="DeleteT_Group" value="删除班组表" />
+
+
+
+
+    <text name="T_GroupDeleteWarningMessage" value="班组表名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="FK_DepId" value="FK_DepId" />
+
+    <text name="GroupName" value="班组" />
+
+    <!-- 培训班人员信息表管理 -->
+    <text name="T_HClass" value="培训班人员信息表" />
+    <text name="T_HClassHeaderInfo" value="培训班人员信息表管理列表" />
+    <text name="CreateT_HClass" value="新增培训班人员信息表" />
+    <text name="EditT_HClass" value="编辑培训班人员信息表" />
+    <text name="DeleteT_HClass" value="删除培训班人员信息表" />
+
+    <text name="T_Require" value="培训需求提报" />
+    <text name="T_RequireHeaderInfo" value="培训需求提报管理列表" />
+    <text name="CreateT_Require" value="新增培训需求提报" />
+
+
+    <text name="T_HClassDeleteWarningMessage" value="培训班人员信息表名称: {0} 将被删除,是否确定删除它。" />
+    <!--//用于表格展示的数据信息的标题-->
+    <text name="SubmitTime" value="提报时间" />
+    <text name="T_Grade" value="考评等级" />
+    <text name="T_GradeHeaderInfo" value="考评等级管理列表" />
+    <text name="CreateT_Grade" value="新增考评等级" />
+    <text name="EditT_Grade" value="编辑考评等级" />
+    <text name="DeleteT_Grade" value="删除考评等级" />
+    <text name="Grade" value="等级" />
     <text name="LoginFailed" value="登录失败!" />
-    
+
+    <text name="T_Staff" value="人员信息表" />
+    <text name="T_StaffHeaderInfo" value="人员信息表管理列表" />
+    <text name="CreateT_Staff" value="新增人员信息表" />
+    <text name="EditT_Staff" value="编辑人员信息表" />
+    <text name="DeleteT_Staff" value="删除人员信息表" />
+
+    <text name="StaffName" value="人员名称" />
+
+    <text name="T_User" value="用户管理" />
+    <text name="T_UserHeaderInfo" value="用户管理管理列表" />
+    <text name="CreateT_User" value="新增用户管理" />
+    <text name="EditT_User" value="编辑用户管理" />
+    <text name="DeleteT_User" value="删除用户管理" />
+
+    <text name="LoginNo" value="登录账号" />
+
+    <text name="OpenId" value="微信OpenId" />
+
   </texts>
 </localizationDictionary>

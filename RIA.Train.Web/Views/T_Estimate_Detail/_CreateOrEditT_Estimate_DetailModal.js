@@ -1,4 +1,5 @@
-﻿
+﻿app = app || {};
+app.modals = app.modals || {};
 (function ($) {
     app.modals.CreateOrEditT_Estimate_DetailModal = function () {
 

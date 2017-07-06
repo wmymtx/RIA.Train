@@ -1,13 +1,13 @@
 ﻿
 @using Abp.Extensions
 @using Abp.Application.Services.Dto
-@using RIA.Train.Web.Areas.Mpa.Models.Common.Modals
-@using RIA.Train.Web.Areas.Mpa.Models.T_UserManage
+@using RIA.Train.Web.Models.Common
+@using RIA.Train.Web.Models
 
 @model CreateOrEditT_UserModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_User") + ": " + Model.T_User.FK_StaffId) : L("CreateT_User")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_User") + ": " + Model.T_User.FK_StaffId) : L("CreateT_User")))
 
 
 <!--html代码区域-->
@@ -74,5 +74,5 @@
             </div>
     </form>
 </div>
-@Html.Partial("~/Areas/Mpa/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
  

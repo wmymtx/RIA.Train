@@ -146,6 +146,30 @@
     <Compile Include="Migrations\201705231438108_20170523.Designer.cs">
       <DependentUpon>201705231438108_20170523.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705301258148_20170530.cs" />
+    <Compile Include="Migrations\201705301258148_20170530.Designer.cs">
+      <DependentUpon>201705301258148_20170530.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706030852151_20170603.cs" />
+    <Compile Include="Migrations\201706030852151_20170603.Designer.cs">
+      <DependentUpon>201706030852151_20170603.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706031433058_201706032230.cs" />
+    <Compile Include="Migrations\201706031433058_201706032230.Designer.cs">
+      <DependentUpon>201706031433058_201706032230.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706041301375_20170604.cs" />
+    <Compile Include="Migrations\201706041301375_20170604.Designer.cs">
+      <DependentUpon>201706041301375_20170604.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706041401047_kkk201706042100.cs" />
+    <Compile Include="Migrations\201706041401047_kkk201706042100.Designer.cs">
+      <DependentUpon>201706041401047_kkk201706042100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706041405598_kkk201706042100pp.cs" />
+    <Compile Include="Migrations\201706041405598_kkk201706042100pp.Designer.cs">
+      <DependentUpon>201706041405598_kkk201706042100pp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TrainDataModule.cs" />
@@ -177,6 +201,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705231438108_20170523.resx">
       <DependentUpon>201705231438108_20170523.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705301258148_20170530.resx">
+      <DependentUpon>201705301258148_20170530.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706030852151_20170603.resx">
+      <DependentUpon>201706030852151_20170603.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706031433058_201706032230.resx">
+      <DependentUpon>201706031433058_201706032230.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041301375_20170604.resx">
+      <DependentUpon>201706041301375_20170604.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041401047_kkk201706042100.resx">
+      <DependentUpon>201706041401047_kkk201706042100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706041405598_kkk201706042100pp.resx">
+      <DependentUpon>201706041405598_kkk201706042100pp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

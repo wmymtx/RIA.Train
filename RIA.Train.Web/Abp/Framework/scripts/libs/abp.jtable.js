@@ -50,7 +50,7 @@
                         sorting: jtParams.jtSorting
                     });
 
-                    originalListAction.method(input)
+                    originalListAction(input)
                         .done(function (result) {
                             $dfd.resolve({
                                 "Result": "OK",

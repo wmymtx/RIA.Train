@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace RIA.Train.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class T_ContentController : TrainControllerBase
     {
         // GET: T_Content
@@ -41,7 +42,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_ContentAppPermissions.T_Content_CreateT_Content, T_ContentAppPermissions.T_Content_EditT_Content)]
+        //[AbpMvcAuthorize(T_ContentAppPermissions.T_Content_CreateT_Content, T_ContentAppPermissions.T_Content_EditT_Content)]
         public async Task<PartialViewResult> CreateOrEditT_ContentModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };

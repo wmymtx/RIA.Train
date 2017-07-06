@@ -1,4 +1,5 @@
-﻿
+﻿app = app || {};
+app.modals = app.modals || {};
 (function ($) {
     app.modals.CreateOrEditT_GroupModal = function () {
 
@@ -27,10 +28,7 @@
 
 						
 			 
-			   	      
-								 //渲染select
-								    $("#fK_DepIdEdit").selectpicker();
-
+			   	 
 
 
 						

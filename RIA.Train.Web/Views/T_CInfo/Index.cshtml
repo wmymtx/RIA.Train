@@ -1,7 +1,7 @@
 ﻿
 
 @using Abp.Web.Mvc.Extensions
-@using RIA.Train.Entities.Authorization
+@using RIA.Train.Core.Authorization
 @{
     ViewBag.CurrentPageName = T_CInfoAppPermissions.T_CInfo;
     ViewBag.Title = L("T_CInfo");
@@ -19,8 +19,9 @@
 { <script src="~/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
  
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_CInfoManage/_CreateOrEditT_CInfoModal.es5.min.js")
-    @Html.IncludeScript("~/Areas/Mpa/Views/T_CInfoManage/Index.es5.min.js")
+    @Html.IncludeScript("~/Views/T_CInfo/_CreateOrEditT_CInfoModal.js")
+    @Html.IncludeScript("~/Views/T_CInfo/Index.js")
+
 }
 <div class="row margin-bottom-5">
     <div class="col-xs-6">
@@ -37,10 +38,10 @@
         <button  id="ButtonReload" class="btn btn-primary blue"><i class="fa  fa-refresh"></i> @L("Refresh")</button>
 
 
-        @if (IsGranted(T_CInfoAppPermissions.T_CInfo_CreateT_CInfo))
-        {
+        @*@if (IsGranted(T_CInfoAppPermissions.T_CInfo_CreateT_CInfo))
+        {*@
             <button id="CreateNewT_CInfoButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateT_CInfo")</button>
-        }
+        @*}*@
     </div>
 </div>
 

@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -23,7 +24,7 @@ namespace RIA.Train.Application
     public interface IT_GradeAppService : IApplicationService
     {
         #region 考评等级管理
-
+        List<T_GradeListDto> GetT_Grades();
         /// <summary>
         /// 根据查询条件获取考评等级分页列表
         /// </summary>

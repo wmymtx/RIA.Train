@@ -1,6 +1,6 @@
-﻿ 
+﻿
 // 项目展示地址:"http://www.ddxc.org/"
- // 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
+// 如果你有什么好的建议或者觉得可以加什么功能，请加QQ群：104390185大家交流沟通
 // 项目展示地址:"http://www.yoyocms.com/"
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
@@ -11,13 +11,13 @@ using AutoMapper;
 
 namespace RIA.Train.Application.Mappers
 {
-	/// <summary>
+    /// <summary>
     /// T_DepDto映射配置
     /// </summary>
-    public class T_DepDtoMapper 
+    public class T_DepDtoMapper
     {
 
-    private static volatile bool _mappedBefore;
+        private static volatile bool _mappedBefore;
         private static readonly object SyncObj = new object();
 
 
@@ -27,8 +27,8 @@ namespace RIA.Train.Application.Mappers
         /// </summary>
         public void CreateMappings(IMapperConfigurationExpression configuration)
         {
-        
-		  lock (SyncObj)
+
+            lock (SyncObj)
             {
                 if (_mappedBefore)
                 {
@@ -41,36 +41,37 @@ namespace RIA.Train.Application.Mappers
             }
 
         }
-    
-
-
-
-
-	    /// <summary>
-       ///    Configuration.Modules.AbpAutoMapper().Configurators.Add(T_DepDtoMapper.CreateMappings);
-      ///注入位置    < see cref = "TrainApplicationModule" /> 
-     /// <param name="configuration"></param>
-    /// </summary>       
-	  private static void CreateMappingsInternal(IMapperConfigurationExpression configuration)
-	  {
-	           
-			      //默认ABP功能已经实现了，如果你要单独对DTO进行拓展，可以在此处放开注释文件。
-
-	  // Configuration.Modules.AbpAutoMapper().Configurators.Add(T_DepDtoMapper.CreateMappings);
-
-	    //    Mapper.CreateMap<T_Dep,T_DepEditDto>();
-       //     Mapper.CreateMap<T_Dep, T_DepListDto>();
-
-     //       Mapper.CreateMap<T_DepEditDto, T_Dep>();
-    //        Mapper.CreateMap<T_DepListDto,T_Dep>();
-  
 
 
 
 
 
+        /// <summary>
+        ///    Configuration.Modules.AbpAutoMapper().Configurators.Add(T_DepDtoMapper.CreateMappings);
+        ///注入位置    < see cref = "TrainApplicationModule" /> 
+        /// <param name="configuration"></param>
+        /// </summary>       
+        private static void CreateMappingsInternal(IMapperConfigurationExpression configuration)
+        {
 
- 	  }
+            //默认ABP功能已经实现了，如果你要单独对DTO进行拓展，可以在此处放开注释文件。
+
+            // Configuration.Modules.AbpAutoMapper().Configurators.Add(T_DepDtoMapper.CreateMappings);
+
+            //    Mapper.CreateMap<T_Dep,T_DepEditDto>();
+            //     Mapper.CreateMap<T_Dep, T_DepListDto>();
+
+            //       Mapper.CreateMap<T_DepEditDto, T_Dep>();
+            //        Mapper.CreateMap<T_DepListDto,T_Dep>();
 
 
-}}
+
+
+
+
+
+        }
+
+
+    }
+}

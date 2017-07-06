@@ -50,3 +50,5 @@ D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.SqlServe
 D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\System.Linq.Dynamic.dll
 D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.xml
 D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EntityFramework.SqlServer.xml
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EPPlus.dll
+D:\myWork\Train20170520\RIA.Train.Application\bin\Debug\EPPlus.xml

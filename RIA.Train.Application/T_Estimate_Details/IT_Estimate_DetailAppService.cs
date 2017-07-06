@@ -28,7 +28,8 @@ namespace RIA.Train.Application
         /// 根据查询条件获取评价明细分页列表
         /// </summary>
         Task<PagedResultDto<T_Estimate_DetailListDto>> GetPagedT_Estimate_DetailsAsync(GetT_Estimate_DetailInput input);
-
+        T_Estimate_DetailListDto GetT_Estima_DetailteById(int id, int userId);
+        T_Estimate_DetailEditDto CreateEstimate_Detail(T_Estimate_DetailEditDto input);
         /// <summary>
         /// 通过Id获取评价明细信息进行编辑或修改 
         /// </summary>

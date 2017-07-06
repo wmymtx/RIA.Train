@@ -11,7 +11,7 @@ using Abp.Domain.Services;
 using System;
 using RIA.Train.Entities;
 
-namespace RIA.Train.Core.T_ItemCore
+namespace RIA.Train.Core
 {
     /// <summary>
     /// 培训项目设置业务管理

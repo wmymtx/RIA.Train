@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace RIA.Train.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class T_GradeController : TrainControllerBase
     {
         // GET: T_Grade
@@ -41,7 +42,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_GradeAppPermissions.T_Grade_CreateT_Grade, T_GradeAppPermissions.T_Grade_EditT_Grade)]
+        //[AbpMvcAuthorize(T_GradeAppPermissions.T_Grade_CreateT_Grade, T_GradeAppPermissions.T_Grade_EditT_Grade)]
         public async Task<PartialViewResult> CreateOrEditT_GradeModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };

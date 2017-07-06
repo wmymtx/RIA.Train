@@ -15,13 +15,13 @@ namespace RIA.Train.Entities
   public  class T_HClass:Entity
     {
 
-        public virtual int FK_ClassId { get; set; }
+        public virtual int FK_HClass_ClassId { get; set; }
 
-        [ForeignKey("FK_ClassId")]
+        [ForeignKey("FK_HClass_ClassId")]
         public virtual T_Class T_Class { get; set; }
 
 
-        public virtual int FK_UserId { get; set; }
+        public virtual int FK_HClass_UserId { get; set; }
 
         /// <summary>
         /// 用户名

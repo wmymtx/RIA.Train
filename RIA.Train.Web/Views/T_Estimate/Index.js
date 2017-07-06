@@ -16,8 +16,8 @@
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_StaffManage/CreateOrEditT_StaffModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_StaffManage/_CreateOrEditT_StaffModal.es5.min.js',
+            viewUrl: abp.appPath + 'T_Staff/CreateOrEditT_StaffModal',
+            scriptUrl: 'Views/T_Staff/_CreateOrEditT_StaffModal.js',
             modalClass: 'CreateOrEditT_StaffModal'
         });
 
@@ -32,9 +32,8 @@
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_StaffService.getPagedT_StaffsAsync
-        }
+                listAction:  _t_StaffService.getPagedT_StaffsAsync
+        
             },
 
         fields: {

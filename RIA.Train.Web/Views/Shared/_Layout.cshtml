@@ -2,8 +2,9 @@
 @using System.Web.Optimization
 @using Abp.Timing
 @using Abp.Web.Mvc.Extensions
+@using RIA.Train.Localization
 @{
-    SetAntiForgeryCookie();
+    //SetAntiForgeryCookie();
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +18,10 @@
     <link rel="shortcut icon" href="~/favicon.ico">
 
     <title>Train</title>
-
+    @Styles.Render("~/Bundles/Frontend/libs/css" + (CultureHelper.IsRtl ? "RTL" : ""))
     @Styles.Render("~/Bundles/vendor/css")
     @Styles.Render("~/Bundles/css")
-
+    @Styles.Render("~/Bundles/CommonRes/css")
     <!-- View specific styles -->
     @RenderSection("styles", required: false)
 
@@ -36,6 +37,10 @@
     <![endif]-->
 
     @Scripts.Render("~/Bundles/vendor/js/top")
+   
+    @Scripts.Render("~/Bundles/vendor/js/bottom")
+    @Scripts.Render("~/Bundles/js")
+
 
 </head>
 <body>
@@ -45,9 +50,15 @@
         @RenderBody()
     </div>
 
-    @Scripts.Render("~/Bundles/vendor/js/bottom")
-    @Scripts.Render("~/Bundles/js")
-
+   
+   
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="~/libs/jquery-jtable/jquery.jtable.min.js?t=6"></script>
+    <script src="~/libs/jquery-jtable/localization/jquery.jtable.zh-CN.js"></script>
+    <script src="~/libs/jstree/jstree.min.js?t=1"></script>
+    <script src="~/Abp/Framework/scripts/libs/abp.jquery.js"></script>
+    <script src="~/Abp/Framework/scripts/libs/abp.jtable.js?t=6"></script>
+    <script src="~/js/ModalManager.js?t=1"></script>
     <script>
         //Localizing momentjs
         moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
@@ -59,9 +70,10 @@
 
     <!-- SignalR scripts -->
     <script src="~/signalr/hubs"></script>
-    @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.signalr.js")
+   
 
 <!-- View specific scripts -->
     @RenderSection("scripts", required: false)
+    @Scripts.Render("~/Bundles/CommonRes/js?t=1")
 </body>
 </html>

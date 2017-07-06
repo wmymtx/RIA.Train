@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -27,7 +28,7 @@ namespace RIA.Train.Application
         /// <summary>
         /// 根据查询条件获取班组表分页列表
         /// </summary>
-        Task<PagedResultDto<T_GroupListDto>> GetPagedT_GroupsAsync(GetT_GroupInput input);
+        Task<JtableResult<List<T_GroupListDto>>> GetPagedT_GroupsAsync(GetT_GroupInput input);
 
         /// <summary>
         /// 通过Id获取班组表信息进行编辑或修改 

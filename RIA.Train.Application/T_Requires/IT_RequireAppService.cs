@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using RIA.Train.Application.Dtos;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
@@ -70,6 +71,8 @@ namespace RIA.Train.Application
         /// </summary>
         Task BatchDeleteT_RequireAsync(List<int> input);
 
+        List<T_ItemListDto> GetJoinItem(int userId);
+        Task<FileDto> GetT_RequireToExcel(GetT_RequireInput input);
         #endregion
 
 

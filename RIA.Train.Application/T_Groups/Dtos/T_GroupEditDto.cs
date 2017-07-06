@@ -5,8 +5,8 @@
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
 // <Author-作者>角落的白板笔</Author-作者>
-// Copyright © YoYoCms@中国.2017-05-23T22:10:10. All Rights Reserved.
-//<生成时间>2017-05-23T22:10:10</生成时间>
+// Copyright © YoYoCms@中国.2017-06-03T16:56:11. All Rights Reserved.
+//<生成时间>2017-06-03T16:56:11</生成时间>
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -18,7 +18,7 @@ using RIA.Train.Entities;
 namespace RIA.Train.Application.Dtos
 {
     /// <summary>
-    /// 班组表编辑用Dto
+    /// 组织表编辑用Dto
     /// </summary>
     [AutoMap(typeof(T_Group))]
     public class T_GroupEditDto 
@@ -30,14 +30,14 @@ namespace RIA.Train.Application.Dtos
     [DisplayName("主键Id")]
 	public int? Id{get;set;}
 
-        public   int  FK_DepId { get; set; }
-
         /// <summary>
-        /// 班组
+        /// 组织名称
         /// </summary>
-        [DisplayName("班组")]
+        [DisplayName("组织名称")]
         [MaxLength(30)]
         public   string  GroupName { get; set; }
+
+        public   int  ParentId { get; set; }
 
     }
 }

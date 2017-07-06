@@ -18,11 +18,16 @@ namespace RIA.Train.Entities
         [ForeignKey("FK_EstimateId")]
         public virtual T_Estimate T_Estimate { get; set; }
 
-        public virtual int FK_UserId{ get; set; }
+        public virtual int FK_TstaffId{ get; set; }
 
-        [ForeignKey("FK_UserId")]
-        public virtual T_User T_User { get; set; }
+        [ForeignKey("FK_TstaffId")]
+        public virtual T_Staff T_Staff { get; set; }
 
         public virtual DateTime? CreateTime { get; set; }
+
+        public T_Estimate_Detail()
+        {
+            CreateTime = DateTime.Now;
+        }
     }
 }

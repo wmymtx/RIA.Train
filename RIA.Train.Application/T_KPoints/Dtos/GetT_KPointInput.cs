@@ -27,6 +27,7 @@ namespace RIA.Train.Application.Dtos
 		/// </summary>
 		public string FilterText { get; set; }
 
+        public int Id { get; set; }
 		/// <summary>
 	    /// 用于排序的默认值
 		/// </summary>

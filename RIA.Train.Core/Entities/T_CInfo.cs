@@ -17,15 +17,18 @@ namespace RIA.Train.Entities
         /// <summary>
         /// 培训项目外键
         /// </summary>
-        public virtual int Fk_Id { get; set; }
+        public virtual int Fk_Item_CInfo_Id { get; set; }
 
-        [ForeignKey("Fk_Id")]
+        [ForeignKey("Fk_Item_CInfo_Id")]
         public virtual T_Item T_Item { get; set; }
 
         /// <summary>
         /// 参培人员
         /// </summary>
-        public virtual int Fk_UserId { get; set; }
+        public virtual int Fk_CInfo_UserId { get; set; }
+
+        [ForeignKey("Fk_CInfo_UserId")]
+        public virtual T_Staff T_Staff { get; set; }
 
         /// <summary>
         /// 参培人员名字

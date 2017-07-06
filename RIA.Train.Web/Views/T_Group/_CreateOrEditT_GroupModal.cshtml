@@ -7,7 +7,7 @@
 @model CreateOrEditT_GroupModalViewModel
 
 @* 初始化头部 *@
-@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Group") + ": " + Model.T_Group.FK_DepId) : L("CreateT_Group")))
+@Html.Partial("~/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditT_Group") + ": " + Model.T_Group.GroupName) : L("CreateT_Group")))
 
 
 <!--html代码区域-->
@@ -25,26 +25,21 @@
         </div>
 	                  
                
- 
-	 <div class="form-group ">
-            <label for="fK_DepIdEdit">@L("FK_DepId")</label>
-          @*  @Html.DropDownList("FK_DepId", Model.T_Group.Select(a => a.ToSelectListItem()), new
-    {
-        @class = "form-control selectpicker",
-        data_live_search = "true",
-        id = "fK_DepIdEdit"
-    })*@
-        </div> 
-	                  
-               
   	<div class="form-group form-md-line-input form-md-floating-label  ">
             <input class="maxlength-handler form-control @(Model.T_Group.GroupName.IsNullOrEmpty() ? "" : " edited")" type="text" name="GroupName" value="@Model.T_Group.GroupName"		maxlength="30"  />			
             <label>@L("GroupName") </label>
         </div>
    
 	                  
+               
+  	<div hidden="hidden">
+            <input class="maxlength-handler form-control " type="hidden" name="ParentId" value="@Model.T_Group.ParentId"	 />			
+            <label>@L("ParentId") </label>
+        </div>
+   
+	                  
             </div>
     </form>
 </div>
-@Html.Partial("~/_ModalFooterWithSaveAndCancel.cshtml")
+@Html.Partial("~/Views/Common/Modals/_ModalFooterWithSaveAndCancel.cshtml")
  

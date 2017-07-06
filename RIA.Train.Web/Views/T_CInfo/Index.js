@@ -16,8 +16,8 @@
 
 
       var _createOrEditModal = new app.ModalManager({
-            viewUrl: abp.appPath + 'Mpa/T_CInfoManage/CreateOrEditT_CInfoModal',
-            scriptUrl: abp.appPath + 'Areas/Mpa/Views/T_CInfoManage/_CreateOrEditT_CInfoModal.es5.min.js',
+            viewUrl: abp.appPath + 'T_CInfo/CreateOrEditT_CInfoModal',
+            scriptUrl: 'Views/T_CInfo/_CreateOrEditT_CInfoModal.js',
             modalClass: 'CreateOrEditT_CInfoModal'
         });
 
@@ -32,9 +32,8 @@
             sorting: true,
             //  multiSorting: true,
             actions: {
-                listAction: {
-                    method: _t_CInfoService.getPagedT_CInfosAsync
-        }
+                listAction: _t_CInfoService.getPagedT_CInfosAsync
+        
             },
 
         fields: {

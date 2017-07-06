@@ -14,9 +14,9 @@ namespace RIA.Train.Entities
     /// </summary>
    public class T_KPoint:Entity
     {
-        public virtual int Fk_Id { get; set; }
+        public virtual int Fk_Item_KPoint_Id { get; set; }
 
-        [ForeignKey("Fk_Id")]
+        [ForeignKey("Fk_Item_KPoint_Id")]
         public virtual T_Item T_Item { get; set; }
 
         /// <summary>

@@ -7,7 +7,7 @@
 // <Author-作者>角落的白板笔</Author-作者>
 // Copyright © YoYoCms@中国.2017-05-21T21:42:09. All Rights Reserved.
 //<生成时间>2017-05-21T21:42:09</生成时间>
-namespace RIA.Train.Core.T_ItemCore
+namespace RIA.Train.Core
 {
 	
 	

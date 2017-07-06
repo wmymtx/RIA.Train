@@ -112,6 +112,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppFolders.cs" />
     <Compile Include="Authorization\AppPermissions.cs" />
     <Compile Include="Entities\T_CInfo.cs" />
     <Compile Include="Entities\T_Class.cs" />
@@ -127,6 +128,8 @@
     <Compile Include="Entities\T_Require.cs" />
     <Compile Include="Entities\T_Staff.cs" />
     <Compile Include="Entities\T_User.cs" />
+    <Compile Include="IAppFolders.cs" />
+    <Compile Include="Localization\CultureHelper.cs" />
     <Compile Include="TrainConsts.cs" />
     <Compile Include="TrainCoreModule.cs" />
     <Compile Include="Authorization\TrainAuthorizationProvider.cs" />
@@ -144,6 +147,7 @@
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
     <Compile Include="TrainFiledConst.cs" />
+    <Compile Include="TrainTemplateServiceBase.cs" />
     <Compile Include="T_CInfos\Authorization\T_CInfoAppAuthorizationProvider.cs" />
     <Compile Include="T_CInfos\Authorization\T_CInfoAppPermissions.cs" />
     <Compile Include="T_CInfos\T_CInfoManage.cs" />

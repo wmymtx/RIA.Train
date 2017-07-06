@@ -28,13 +28,14 @@ using RIA.Train.Entities;
 using RIA.Train.Application.Dtos;
 using RIA.Train.Core.Authorization;
 using RIA.Train.Core;
+using RIA.Train.Dto;
 
 namespace RIA.Train.Application
 {
     /// <summary>
     /// 部门表服务实现
     /// </summary>
-    [AbpAuthorize(T_DepAppPermissions.T_Dep)]
+   // [AbpAuthorize(T_DepAppPermissions.T_Dep)]
     public class T_DepAppService : TrainAppServiceBase, IT_DepAppService
     {
         private readonly IRepository<T_Dep,int> _t_DepRepository;
@@ -59,7 +60,7 @@ T_DepManage t_DepManage
     /// <summary>
     /// 根据查询条件获取部门表分页列表
     /// </summary>
-    public async Task<PagedResultDto<T_DepListDto>> GetPagedT_DepsAsync(GetT_DepInput input)
+    public async Task<JtableResult<List<T_DepListDto>>> GetPagedT_DepsAsync(GetT_DepInput input)
 {
 			
     var query = _t_DepRepository.GetAll();
@@ -73,10 +74,11 @@ T_DepManage t_DepManage
     .ToListAsync();
 
     var t_DepListDtos = t_Deps.MapTo<List<T_DepListDto>>();
-    return new PagedResultDto<T_DepListDto>(
-    t_DepCount,
-    t_DepListDtos
-    );
+            //return new TPagedResultDto<T_DepListDto>(
+            //t_DepCount,
+            //t_DepListDtos
+            //);
+            return new JtableResult<List<T_DepListDto>>(t_DepCount, t_DepListDtos);
     }
 
         /// <summary>
@@ -137,7 +139,7 @@ T_DepManage t_DepManage
     /// <summary>
     /// 新增部门表
     /// </summary>
-    [AbpAuthorize(T_DepAppPermissions.T_Dep_CreateT_Dep)]
+    //[AbpAuthorize(T_DepAppPermissions.T_Dep_CreateT_Dep)]
     public virtual async Task<T_DepEditDto> CreateT_DepAsync(T_DepEditDto input)
 {
     //TODO:新增前的逻辑判断，是否允许新增

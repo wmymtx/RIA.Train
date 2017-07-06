@@ -4,8 +4,8 @@
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
 // <Author-作者>角落的白板笔</Author-作者>
-// Copyright © YoYoCms@中国.2017-05-25T22:47:37. All Rights Reserved.
-//<生成时间>2017-05-25T22:47:37</生成时间>
+// Copyright © YoYoCms@中国.2017-06-04T21:10:27. All Rights Reserved.
+//<生成时间>2017-06-04T21:10:27</生成时间>
 using System;
 using Abp.Application.Services.Dto;
 using Abp.Extensions;
@@ -27,9 +27,11 @@ namespace RIA.Train.Application.Dtos
 		/// </summary>
 		public string FilterText { get; set; }
 
-		/// <summary>
-	    /// 用于排序的默认值
-		/// </summary>
+        public int? Fk_Item_Require_Id { get; set; }
+
+        /// <summary>
+        /// 用于排序的默认值
+        /// </summary>
         public void Normalize()
         {
             if (string.IsNullOrEmpty(Sorting))

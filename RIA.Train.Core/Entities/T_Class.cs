@@ -14,9 +14,9 @@ namespace RIA.Train.Entities
         /// <summary>
         /// 培训项目外键
         /// </summary>
-        public virtual int Fk_Id { get; set; }
+        public virtual int Fk_Item_Id { get; set; }
 
-        [ForeignKey("Fk_Id")]
+        [ForeignKey("Fk_Item_Id")]
         public virtual T_Item T_Item { get; set; }
 
         /// <summary>
@@ -40,5 +40,10 @@ namespace RIA.Train.Entities
         /// 创建时间
         /// </summary>
         public virtual DateTime? CreateTime { get; set; }
+
+        public T_Class()
+        {
+            CreateTime = DateTime.Now;
+        }
     }
 }

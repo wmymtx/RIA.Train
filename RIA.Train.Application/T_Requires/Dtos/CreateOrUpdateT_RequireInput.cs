@@ -4,8 +4,8 @@
 //博客地址：http://www.cnblogs.com/wer-ltm/
 //代码生成器帮助文档：http://www.cnblogs.com/wer-ltm/p/5777190.html
 // <Author-作者>角落的白板笔</Author-作者>
-// Copyright © YoYoCms@中国.2017-05-25T22:47:38. All Rights Reserved.
-//<生成时间>2017-05-25T22:47:38</生成时间>
+// Copyright © YoYoCms@中国.2017-06-04T21:10:28. All Rights Reserved.
+//<生成时间>2017-06-04T21:10:28</生成时间>
 using System;
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
@@ -13,6 +13,7 @@ using Abp.AutoMapper;
 using Abp.Runtime.Validation;
 using Abp.Extensions;
 using RIA.Train.Entities;
+using System.Collections.Generic;
 
 namespace RIA.Train.Application.Dtos
 {
@@ -25,7 +26,7 @@ namespace RIA.Train.Application.Dtos
     /// <summary>
     /// 培训需求提报编辑Dto
     /// </summary>
-		public T_RequireEditDto  T_RequireEditDto {get;set;}
+		public List<T_RequireEditDto>  T_RequireEditDto {get;set;}
  
     }
 }

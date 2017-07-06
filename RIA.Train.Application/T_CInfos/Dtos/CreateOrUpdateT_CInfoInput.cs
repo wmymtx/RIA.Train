@@ -13,6 +13,7 @@ using Abp.AutoMapper;
 using Abp.Runtime.Validation;
 using Abp.Extensions;
 using RIA.Train.Entities;
+using System.Collections.Generic;
 
 namespace RIA.Train.Application.Dtos
 {
@@ -27,5 +28,14 @@ namespace RIA.Train.Application.Dtos
     /// </summary>
 		public T_CInfoEditDto  T_CInfoEditDto {get;set;}
  
+    }
+
+    public class BatchCreateOrUpdateT_CInfoInput
+    {
+        /// <summary>
+        /// 培训信息配置表编辑Dto
+        /// </summary>
+        public List<T_CInfoEditDto> T_CInfoEditDto { get; set; }
+
     }
 }

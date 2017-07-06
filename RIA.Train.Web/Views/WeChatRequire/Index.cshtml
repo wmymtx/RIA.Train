@@ -1,0 +1,112 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>培训提报</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="人类回收资源,资源服务人类">
+    <link rel="stylesheet" href="~/lib/weui.min.css?t=8">
+    <link rel="stylesheet" href="~/css/jquery-weui.css?t=8">
+    <link rel="stylesheet" href="~/css/common.css?t=8">
+    <style type="text/css">
+        body {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body ontouchstart>
+
+
+    <div class="weui_cells weui_cells_checkbox">
+        @foreach (var item in ViewBag.itemList)
+            { <div class="weui_cells weui_cells_form">
+                <input type="hidden" id="itemId" value="@item.Id" />
+                <div class="weui_cells_title title_click" id="@item.Id">@item.ProjectName</div>
+                <label class="weui_cell weui_check_label" for="s1 @item.Id">
+                    <div class="weui_cell_hd">
+                        <input type="checkbox" class="weui_check" valueName="@item.ProjectName" name="category" id="s1 @item.Id" value="@item.Id">
+                        <i class="weui_icon_checked"></i>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>@item.ProjectName</p>
+                    </div>
+                </label>
+                <div class="weui_cells_title">请填写你的需求</div>
+                <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <textarea id="trainContent" class="weui_textarea" placeholder="请填写你的需求" rows="3" maxlength="200"></textarea>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+        <a href="javascript:;" id="btnSave" class="weui_btn weui_btn_primary">提交</a>
+
+    </div>
+
+    <div id="content" class="weui-popup-container">
+        <div class="weui-popup-overlay"></div>
+        <div class="weui-popup-modal">
+            <div class="weui_cells weui_cells_form" id="detail_div">
+                <div class="weui_cells_title"></div>
+                <div class="weui_cell" >
+                    <div class="weui_cell_hd"><label class="weui_label">姓名</label></div>
+                </div>
+               
+            </div>
+           
+            <a href="javascript:;" id="btnCancel" class="weui_btn weui_btn_disabled weui_btn_warn">取消</a>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery-2.1.4.js"></script>
+    <script src="~/lib/fastclick.js"></script>
+    <script src="~/js/shoushou.js"></script>
+
+    <script src="~/Views/WeChatRequire/Index.js?t=0"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+            //window.address.Init();
+            ssUser.init();
+        });
+
+        //$("#btnCancel").click(function () {
+        //    $.closePopup();
+        //    $("#btnAdd").show();
+        //});
+        //$("#btnAdd").click(function () {
+        //    $("#btnAdd").hide();
+        //    $("#content").popup();
+        //});
+        //$("#btnSave").click(function () {
+        //    var name = $("#txtName").val();
+        //    var phone = $("#txtPhone").val();
+        //    var address = $("#txtAddress").val();
+        //    if (!checkName(name)) {
+        //        $.toptip('姓名不能为空！', 'error');
+        //    }
+        //    else if (!checkPhone(phone)) {
+        //        $.toptip('手机号码错误！', 'error');
+        //    }
+        //    else if (!checkAddress(address)) {
+        //        $.toptip('地址不能为空！', 'error');
+        //    }
+        //    else {
+        //        $.showLoading("正在保存...");
+
+        //    }
+        //});
+    </script>
+    <script src="~/js/jquery-weui.min.js"></script>
+</body>
+</html>

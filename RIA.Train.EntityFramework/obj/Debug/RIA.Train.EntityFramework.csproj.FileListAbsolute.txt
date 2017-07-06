@@ -56,3 +56,9 @@ D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.EntityFram
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.EntityFramework.pdb
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170521.resources
 D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170523.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170530.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170603.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._201706032230.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations._20170604.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations.kkk201706042100.resources
+D:\myWork\Train20170520\RIA.Train.EntityFramework\obj\Debug\RIA.Train.Migrations.kkk201706042100pp.resources

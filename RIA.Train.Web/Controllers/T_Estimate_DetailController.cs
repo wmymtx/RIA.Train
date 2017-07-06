@@ -41,7 +41,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_Estimate_DetailAppPermissions.T_Estimate_Detail_CreateT_Estimate_Detail, T_Estimate_DetailAppPermissions.T_Estimate_Detail_EditT_Estimate_Detail)]
+        //[AbpMvcAuthorize(T_Estimate_DetailAppPermissions.T_Estimate_Detail_CreateT_Estimate_Detail, T_Estimate_DetailAppPermissions.T_Estimate_Detail_EditT_Estimate_Detail)]
         public async Task<PartialViewResult> CreateOrEditT_Estimate_DetailModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };

@@ -41,7 +41,7 @@ namespace RIA.Train.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [AbpMvcAuthorize(T_UserAppPermissions.T_User_CreateT_User, T_UserAppPermissions.T_User_EditT_User)]
+      //  [AbpMvcAuthorize(T_UserAppPermissions.T_User_CreateT_User, T_UserAppPermissions.T_User_EditT_User)]
         public async Task<PartialViewResult> CreateOrEditT_UserModal(int? id)
         {
             var input = new NullableIdDto<int> { Id = id };
